@@ -149,6 +149,7 @@ class SelectorButton extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       isScrollControlled: isScrollControlled,
       backgroundColor: Colors.transparent,
+      useSafeArea: true,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(12), topRight: Radius.circular(12))),
@@ -160,32 +161,27 @@ class SelectorButton extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                     bottom: MediaQuery.of(context).viewInsets.bottom),
-            child: DraggableScrollableSheet(
-              builder: (BuildContext context, ScrollController controller) {
-                return Directionality(
-                  textDirection: Directionality.of(inheritedContext),
-                  child: Container(
-                    decoration: ShapeDecoration(
-                      color: Theme.of(context).canvasColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(12),
-                          topRight: Radius.circular(12),
-                        ),
-                      ),
-                    ),
-                    child: CountrySearchListWidget(
-                      countries,
-                      locale,
-                      searchBoxDecoration: searchBoxDecoration,
-                      scrollController: controller,
-                      showFlags: selectorConfig.showFlags,
-                      useEmoji: selectorConfig.useEmoji,
-                      autoFocus: autoFocusSearchField,
+            child: Directionality(
+              textDirection: Directionality.of(inheritedContext),
+              child: Container(
+                decoration: ShapeDecoration(
+                  color: Theme.of(context).canvasColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12),
                     ),
                   ),
-                );
-              },
+                ),
+                child: CountrySearchListWidget(
+                  countries,
+                  locale,
+                  searchBoxDecoration: searchBoxDecoration,
+                  showFlags: selectorConfig.showFlags,
+                  useEmoji: selectorConfig.useEmoji,
+                  autoFocus: autoFocusSearchField,
+                ),
+              ),
             ),
           ),
         ]);
