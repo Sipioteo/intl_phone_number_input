@@ -2,6 +2,7 @@
 class Countries {
   /// returns `List<Map<String, dynamic>` of countries which contains
   ///  *  num_code
+  ///  "digits_without_dial":"",
   ///  *  alpha_2_code
   ///  *  alpha_3_code
   ///  *  en_short_name
@@ -12,6 +13,7 @@ class Countries {
   ///   ```dart
   ///     {
   ///    "num_code": "566",
+  ///    "digits_without_dial":"",
   ///    "alpha_2_code": "NG",
   ///    "alpha_3_code": "NGA",
   ///    "en_short_name": "Nigeria",
@@ -45,6 +47,7 @@ class Countries {
   static List<Map<String, dynamic>> _countryList = [
     {
       "num_code": "4",
+      "digits_without_dial":"",
       "alpha_2_code": "AF",
       "alpha_3_code": "AFG",
       "en_short_name": "Afghanistan",
@@ -76,6 +79,7 @@ class Countries {
     },
     {
       "num_code": "248",
+      "digits_without_dial":"",
       "alpha_2_code": "AX",
       "alpha_3_code": "ALA",
       "en_short_name": "Åland Islands",
@@ -107,6 +111,7 @@ class Countries {
     },
     {
       "num_code": "8",
+      "digits_without_dial":"",
       "alpha_2_code": "AL",
       "alpha_3_code": "ALB",
       "en_short_name": "Albania",
@@ -138,6 +143,7 @@ class Countries {
     },
     {
       "num_code": "12",
+      "digits_without_dial":"",
       "alpha_2_code": "DZ",
       "alpha_3_code": "DZA",
       "en_short_name": "Algeria",
@@ -169,6 +175,7 @@ class Countries {
     },
     {
       "num_code": "16",
+      "digits_without_dial":"",
       "alpha_2_code": "AS",
       "alpha_3_code": "ASM",
       "en_short_name": "American Samoa",
@@ -200,6 +207,7 @@ class Countries {
     },
     {
       "num_code": "20",
+      "digits_without_dial":"",
       "alpha_2_code": "AD",
       "alpha_3_code": "AND",
       "en_short_name": "Andorra",
@@ -231,6 +239,7 @@ class Countries {
     },
     {
       "num_code": "24",
+      "digits_without_dial":"",
       "alpha_2_code": "AO",
       "alpha_3_code": "AGO",
       "en_short_name": "Angola",
@@ -262,6 +271,7 @@ class Countries {
     },
     {
       "num_code": "660",
+"digits_without_dial":"",
       "alpha_2_code": "AI",
       "alpha_3_code": "AIA",
       "en_short_name": "Anguilla",
@@ -293,6 +303,7 @@ class Countries {
     },
     {
       "num_code": "10",
+        "digits_without_dial":"",
       "alpha_2_code": "AQ",
       "alpha_3_code": "ATA",
       "en_short_name": "Antarctica",
@@ -324,6 +335,7 @@ class Countries {
     },
     {
       "num_code": "28",
+        "digits_without_dial":"",
       "alpha_2_code": "AG",
       "alpha_3_code": "ATG",
       "en_short_name": "Antigua and Barbuda",
@@ -355,6 +367,7 @@ class Countries {
     },
     {
       "num_code": "32",
+ "digits_without_dial":"",
       "alpha_2_code": "AR",
       "alpha_3_code": "ARG",
       "en_short_name": "Argentina",
@@ -386,6 +399,7 @@ class Countries {
     },
     {
       "num_code": "51",
+"digits_without_dial":"",
       "alpha_2_code": "AM",
       "alpha_3_code": "ARM",
       "en_short_name": "Armenia",
@@ -417,6 +431,7 @@ class Countries {
     },
     {
       "num_code": "533",
+      "digits_without_dial":"",
       "alpha_2_code": "AW",
       "alpha_3_code": "ABW",
       "en_short_name": "Aruba",
@@ -448,6 +463,7 @@ class Countries {
     },
     {
       "num_code": "36",
+      "digits_without_dial":"",
       "alpha_2_code": "AU",
       "alpha_3_code": "AUS",
       "en_short_name": "Australia",
@@ -479,6 +495,7 @@ class Countries {
     },
     {
       "num_code": "40",
+"digits_without_dial":"",
       "alpha_2_code": "AT",
       "alpha_3_code": "AUT",
       "en_short_name": "Austria",
@@ -510,6 +527,7 @@ class Countries {
     },
     {
       "num_code": "31",
+      "digits_without_dial":"",
       "alpha_2_code": "AZ",
       "alpha_3_code": "AZE",
       "en_short_name": "Azerbaijan",
@@ -541,6 +559,7 @@ class Countries {
     },
     {
       "num_code": "44",
+      "digits_without_dial":"",
       "alpha_2_code": "BS",
       "alpha_3_code": "BHS",
       "en_short_name": "Bahamas",
@@ -572,6 +591,7 @@ class Countries {
     },
     {
       "num_code": "48",
+        "digits_without_dial":"",
       "alpha_2_code": "BH",
       "alpha_3_code": "BHR",
       "en_short_name": "Bahrain",
@@ -603,6 +623,7 @@ class Countries {
     },
     {
       "num_code": "50",
+      "digits_without_dial":"",
       "alpha_2_code": "BD",
       "alpha_3_code": "BGD",
       "en_short_name": "Bangladesh",
@@ -634,6 +655,7 @@ class Countries {
     },
     {
       "num_code": "52",
+      "digits_without_dial":"",
       "alpha_2_code": "BB",
       "alpha_3_code": "BRB",
       "en_short_name": "Barbados",
@@ -665,6 +687,7 @@ class Countries {
     },
     {
       "num_code": "112",
+        "digits_without_dial":"",
       "alpha_2_code": "BY",
       "alpha_3_code": "BLR",
       "en_short_name": "Belarus",
@@ -696,6 +719,7 @@ class Countries {
     },
     {
       "num_code": "56",
+      "digits_without_dial":"",
       "alpha_2_code": "BE",
       "alpha_3_code": "BEL",
       "en_short_name": "Belgium",
@@ -727,6 +751,7 @@ class Countries {
     },
     {
       "num_code": "84",
+      "digits_without_dial":"",
       "alpha_2_code": "BZ",
       "alpha_3_code": "BLZ",
       "en_short_name": "Belize",
@@ -758,6 +783,7 @@ class Countries {
     },
     {
       "num_code": "204",
+      "digits_without_dial":"",
       "alpha_2_code": "BJ",
       "alpha_3_code": "BEN",
       "en_short_name": "Benin",
@@ -789,6 +815,7 @@ class Countries {
     },
     {
       "num_code": "60",
+      "digits_without_dial":"",
       "alpha_2_code": "BM",
       "alpha_3_code": "BMU",
       "en_short_name": "Bermuda",
@@ -820,6 +847,7 @@ class Countries {
     },
     {
       "num_code": "64",
+"digits_without_dial":"",
       "alpha_2_code": "BT",
       "alpha_3_code": "BTN",
       "en_short_name": "Bhutan",
@@ -851,6 +879,7 @@ class Countries {
     },
     {
       "num_code": "68",
+      "digits_without_dial":"",
       "alpha_2_code": "BO",
       "alpha_3_code": "BOL",
       "en_short_name": "Bolivia (Plurinational State of)",
@@ -882,6 +911,7 @@ class Countries {
     },
     {
       "num_code": "70",
+      "digits_without_dial":"",
       "alpha_2_code": "BA",
       "alpha_3_code": "BIH",
       "en_short_name": "Bosnia and Herzegovina",
@@ -913,6 +943,7 @@ class Countries {
     },
     {
       "num_code": "72",
+      "digits_without_dial":"",
       "alpha_2_code": "BW",
       "alpha_3_code": "BWA",
       "en_short_name": "Botswana",
@@ -944,6 +975,7 @@ class Countries {
     },
     {
       "num_code": "74",
+      "digits_without_dial":"",
       "alpha_2_code": "BV",
       "alpha_3_code": "BVT",
       "en_short_name": "Bouvet Island",
@@ -975,6 +1007,7 @@ class Countries {
     },
     {
       "num_code": "76",
+ "digits_without_dial":"",
       "alpha_2_code": "BR",
       "alpha_3_code": "BRA",
       "en_short_name": "Brazil",
@@ -1006,6 +1039,7 @@ class Countries {
     },
     {
       "num_code": "86",
+"digits_without_dial":"",
       "alpha_2_code": "IO",
       "alpha_3_code": "IOT",
       "en_short_name": "British Indian Ocean Territory",
@@ -1037,6 +1071,7 @@ class Countries {
     },
     {
       "num_code": "96",
+"digits_without_dial":"",
       "alpha_2_code": "BN",
       "alpha_3_code": "BRN",
       "en_short_name": "Brunei Darussalam",
@@ -1068,6 +1103,7 @@ class Countries {
     },
     {
       "num_code": "100",
+      "digits_without_dial":"",
       "alpha_2_code": "BG",
       "alpha_3_code": "BGR",
       "en_short_name": "Bulgaria",
@@ -1099,6 +1135,7 @@ class Countries {
     },
     {
       "num_code": "854",
+      "digits_without_dial":"",
       "alpha_2_code": "BF",
       "alpha_3_code": "BFA",
       "en_short_name": "Burkina Faso",
@@ -1130,6 +1167,7 @@ class Countries {
     },
     {
       "num_code": "108",
+      "digits_without_dial":"",
       "alpha_2_code": "BI",
       "alpha_3_code": "BDI",
       "en_short_name": "Burundi",
@@ -1161,6 +1199,7 @@ class Countries {
     },
     {
       "num_code": "132",
+      "digits_without_dial":"",
       "alpha_2_code": "CV",
       "alpha_3_code": "CPV",
       "en_short_name": "Cabo Verde",
@@ -1192,6 +1231,7 @@ class Countries {
     },
     {
       "num_code": "116",
+"digits_without_dial":"",
       "alpha_2_code": "KH",
       "alpha_3_code": "KHM",
       "en_short_name": "Cambodia",
@@ -1223,6 +1263,7 @@ class Countries {
     },
     {
       "num_code": "120",
+        "digits_without_dial":"",
       "alpha_2_code": "CM",
       "alpha_3_code": "CMR",
       "en_short_name": "Cameroon",
@@ -1254,6 +1295,7 @@ class Countries {
     },
     {
       "num_code": "124",
+        "digits_without_dial":"",
       "alpha_2_code": "CA",
       "alpha_3_code": "CAN",
       "en_short_name": "Canada",
@@ -1285,6 +1327,7 @@ class Countries {
     },
     {
       "num_code": "136",
+      "digits_without_dial":"",
       "alpha_2_code": "KY",
       "alpha_3_code": "CYM",
       "en_short_name": "Cayman Islands",
@@ -1316,6 +1359,7 @@ class Countries {
     },
     {
       "num_code": "140",
+"digits_without_dial":"",
       "alpha_2_code": "CF",
       "alpha_3_code": "CAF",
       "en_short_name": "Central African Republic",
@@ -1347,6 +1391,7 @@ class Countries {
     },
     {
       "num_code": "148",
+      "digits_without_dial":"",
       "alpha_2_code": "TD",
       "alpha_3_code": "TCD",
       "en_short_name": "Chad",
@@ -1378,6 +1423,7 @@ class Countries {
     },
     {
       "num_code": "152",
+      "digits_without_dial":"",
       "alpha_2_code": "CL",
       "alpha_3_code": "CHL",
       "en_short_name": "Chile",
@@ -1409,6 +1455,7 @@ class Countries {
     },
     {
       "num_code": "156",
+        "digits_without_dial":"",
       "alpha_2_code": "CN",
       "alpha_3_code": "CHN",
       "en_short_name": "China",
@@ -1440,6 +1487,7 @@ class Countries {
     },
     {
       "num_code": "162",
+        "digits_without_dial":"",
       "alpha_2_code": "CX",
       "alpha_3_code": "CXR",
       "en_short_name": "Christmas Island",
@@ -1471,6 +1519,7 @@ class Countries {
     },
     {
       "num_code": "166",
+      "digits_without_dial":"",
       "alpha_2_code": "CC",
       "alpha_3_code": "CCK",
       "en_short_name": "Cocos (Keeling) Islands",
@@ -1502,6 +1551,7 @@ class Countries {
     },
     {
       "num_code": "170",
+      "digits_without_dial":"",
       "alpha_2_code": "CO",
       "alpha_3_code": "COL",
       "en_short_name": "Colombia",
@@ -1533,6 +1583,7 @@ class Countries {
     },
     {
       "num_code": "174",
+      "digits_without_dial":"",
       "alpha_2_code": "KM",
       "alpha_3_code": "COM",
       "en_short_name": "Comoros",
@@ -1564,6 +1615,7 @@ class Countries {
     },
     {
       "num_code": "178",
+"digits_without_dial":"",
       "alpha_2_code": "CG",
       "alpha_3_code": "COG",
       "en_short_name": "Congo (Republic of the)",
@@ -1595,6 +1647,7 @@ class Countries {
     },
     {
       "num_code": "180",
+"digits_without_dial":"",
       "alpha_2_code": "CD",
       "alpha_3_code": "COD",
       "en_short_name": "Congo (Democratic Republic of the)",
@@ -1626,6 +1679,7 @@ class Countries {
     },
     {
       "num_code": "184",
+      "digits_without_dial":"",
       "alpha_2_code": "CK",
       "alpha_3_code": "COK",
       "en_short_name": "Cook Islands",
@@ -1657,6 +1711,7 @@ class Countries {
     },
     {
       "num_code": "188",
+      "digits_without_dial":"",
       "alpha_2_code": "CR",
       "alpha_3_code": "CRI",
       "en_short_name": "Costa Rica",
@@ -1688,6 +1743,7 @@ class Countries {
     },
     {
       "num_code": "384",
+      "digits_without_dial":"",
       "alpha_2_code": "CI",
       "alpha_3_code": "CIV",
       "en_short_name": "Côte d'Ivoire",
@@ -1719,6 +1775,7 @@ class Countries {
     },
     {
       "num_code": "191",
+        "digits_without_dial":"",
       "alpha_2_code": "HR",
       "alpha_3_code": "HRV",
       "en_short_name": "Croatia",
@@ -1750,6 +1807,7 @@ class Countries {
     },
     {
       "num_code": "192",
+      "digits_without_dial":"",
       "alpha_2_code": "CU",
       "alpha_3_code": "CUB",
       "en_short_name": "Cuba",
@@ -1781,6 +1839,7 @@ class Countries {
     },
     {
       "num_code": "196",
+      "digits_without_dial":"",
       "alpha_2_code": "CY",
       "alpha_3_code": "CYP",
       "en_short_name": "Cyprus",
@@ -1812,6 +1871,7 @@ class Countries {
     },
     {
       "num_code": "203",
+      "digits_without_dial":"",
       "alpha_2_code": "CZ",
       "alpha_3_code": "CZE",
       "en_short_name": "Czech Republic",
@@ -1843,6 +1903,7 @@ class Countries {
     },
     {
       "num_code": "208",
+"digits_without_dial":"",
       "alpha_2_code": "DK",
       "alpha_3_code": "DNK",
       "en_short_name": "Denmark",
@@ -1874,6 +1935,7 @@ class Countries {
     },
     {
       "num_code": "262",
+      "digits_without_dial":"",
       "alpha_2_code": "DJ",
       "alpha_3_code": "DJI",
       "en_short_name": "Djibouti",
@@ -1905,6 +1967,7 @@ class Countries {
     },
     {
       "num_code": "212",
+      "digits_without_dial":"",
       "alpha_2_code": "DM",
       "alpha_3_code": "DMA",
       "en_short_name": "Dominica",
@@ -1936,6 +1999,7 @@ class Countries {
     },
     {
       "num_code": "214",
+      "digits_without_dial":"",
       "alpha_2_code": "DO",
       "alpha_3_code": "DOM",
       "en_short_name": "Dominican Republic",
@@ -1967,6 +2031,7 @@ class Countries {
     },
     {
       "num_code": "218",
+      "digits_without_dial":"",
       "alpha_2_code": "EC",
       "alpha_3_code": "ECU",
       "en_short_name": "Ecuador",
@@ -1998,6 +2063,7 @@ class Countries {
     },
     {
       "num_code": "818",
+      "digits_without_dial":"",
       "alpha_2_code": "EG",
       "alpha_3_code": "EGY",
       "en_short_name": "Egypt",
@@ -2029,6 +2095,7 @@ class Countries {
     },
     {
       "num_code": "222",
+      "digits_without_dial":"",
       "alpha_2_code": "SV",
       "alpha_3_code": "SLV",
       "en_short_name": "El Salvador",
@@ -2060,6 +2127,7 @@ class Countries {
     },
     {
       "num_code": "226",
+ "digits_without_dial":"",
       "alpha_2_code": "GQ",
       "alpha_3_code": "GNQ",
       "en_short_name": "Equatorial Guinea",
@@ -2091,6 +2159,7 @@ class Countries {
     },
     {
       "num_code": "232",
+      "digits_without_dial":"",
       "alpha_2_code": "ER",
       "alpha_3_code": "ERI",
       "en_short_name": "Eritrea",
@@ -2122,6 +2191,7 @@ class Countries {
     },
     {
       "num_code": "233",
+      "digits_without_dial":"",
       "alpha_2_code": "EE",
       "alpha_3_code": "EST",
       "en_short_name": "Estonia",
@@ -2153,6 +2223,7 @@ class Countries {
     },
     {
       "num_code": "231",
+        "digits_without_dial":"",
       "alpha_2_code": "ET",
       "alpha_3_code": "ETH",
       "en_short_name": "Ethiopia",
@@ -2184,6 +2255,7 @@ class Countries {
     },
     {
       "num_code": "238",
+"digits_without_dial":"",
       "alpha_2_code": "FK",
       "alpha_3_code": "FLK",
       "en_short_name": "Falkland Islands (Malvinas)",
@@ -2215,6 +2287,7 @@ class Countries {
     },
     {
       "num_code": "234",
+      "digits_without_dial":"",
       "alpha_2_code": "FO",
       "alpha_3_code": "FRO",
       "en_short_name": "Faroe Islands",
@@ -2246,6 +2319,7 @@ class Countries {
     },
     {
       "num_code": "242",
+      "digits_without_dial":"",
       "alpha_2_code": "FJ",
       "alpha_3_code": "FJI",
       "en_short_name": "Fiji",
@@ -2277,6 +2351,7 @@ class Countries {
     },
     {
       "num_code": "246",
+ "digits_without_dial":"",
       "alpha_2_code": "FI",
       "alpha_3_code": "FIN",
       "en_short_name": "Finland",
@@ -2308,6 +2383,7 @@ class Countries {
     },
     {
       "num_code": "250",
+      "digits_without_dial":"",
       "alpha_2_code": "FR",
       "alpha_3_code": "FRA",
       "en_short_name": "France",
@@ -2339,6 +2415,7 @@ class Countries {
     },
     {
       "num_code": "254",
+"digits_without_dial":"",
       "alpha_2_code": "GF",
       "alpha_3_code": "GUF",
       "en_short_name": "French Guiana",
@@ -2370,6 +2447,7 @@ class Countries {
     },
     {
       "num_code": "258",
+"digits_without_dial":"",
       "alpha_2_code": "PF",
       "alpha_3_code": "PYF",
       "en_short_name": "French Polynesia",
@@ -2401,6 +2479,7 @@ class Countries {
     },
     {
       "num_code": "260",
+      "digits_without_dial":"",
       "alpha_2_code": "TF",
       "alpha_3_code": "ATF",
       "en_short_name": "French Southern Territories",
@@ -2432,6 +2511,7 @@ class Countries {
     },
     {
       "num_code": "266",
+"digits_without_dial":"",
       "alpha_2_code": "GA",
       "alpha_3_code": "GAB",
       "en_short_name": "Gabon",
@@ -2463,6 +2543,7 @@ class Countries {
     },
     {
       "num_code": "270",
+"digits_without_dial":"",
       "alpha_2_code": "GM",
       "alpha_3_code": "GMB",
       "en_short_name": "Gambia",
@@ -2494,6 +2575,7 @@ class Countries {
     },
     {
       "num_code": "268",
+      "digits_without_dial":"",
       "alpha_2_code": "GE",
       "alpha_3_code": "GEO",
       "en_short_name": "Georgia",
@@ -2525,6 +2607,7 @@ class Countries {
     },
     {
       "num_code": "276",
+      "digits_without_dial":"",
       "alpha_2_code": "DE",
       "alpha_3_code": "DEU",
       "en_short_name": "Germany",
@@ -2556,6 +2639,7 @@ class Countries {
     },
     {
       "num_code": "288",
+      "digits_without_dial":"",
       "alpha_2_code": "GH",
       "alpha_3_code": "GHA",
       "en_short_name": "Ghana",
@@ -2587,6 +2671,7 @@ class Countries {
     },
     {
       "num_code": "292",
+      "digits_without_dial":"",
       "alpha_2_code": "GI",
       "alpha_3_code": "GIB",
       "en_short_name": "Gibraltar",
@@ -2618,6 +2703,7 @@ class Countries {
     },
     {
       "num_code": "300",
+      "digits_without_dial":"",
       "alpha_2_code": "GR",
       "alpha_3_code": "GRC",
       "en_short_name": "Greece",
@@ -2649,6 +2735,7 @@ class Countries {
     },
     {
       "num_code": "304",
+"digits_without_dial":"",
       "alpha_2_code": "GL",
       "alpha_3_code": "GRL",
       "en_short_name": "Greenland",
@@ -2680,6 +2767,7 @@ class Countries {
     },
     {
       "num_code": "308",
+"digits_without_dial":"",
       "alpha_2_code": "GD",
       "alpha_3_code": "GRD",
       "en_short_name": "Grenada",
@@ -2711,6 +2799,7 @@ class Countries {
     },
     {
       "num_code": "312",
+      "digits_without_dial":"",
       "alpha_2_code": "GP",
       "alpha_3_code": "GLP",
       "en_short_name": "Guadeloupe",
@@ -2742,6 +2831,7 @@ class Countries {
     },
     {
       "num_code": "316",
+"digits_without_dial":"",
       "alpha_2_code": "GU",
       "alpha_3_code": "GUM",
       "en_short_name": "Guam",
@@ -2773,6 +2863,7 @@ class Countries {
     },
     {
       "num_code": "320",
+      "digits_without_dial":"",
       "alpha_2_code": "GT",
       "alpha_3_code": "GTM",
       "en_short_name": "Guatemala",
@@ -2804,6 +2895,7 @@ class Countries {
     },
     {
       "num_code": "831",
+      "digits_without_dial":"",
       "alpha_2_code": "GG",
       "alpha_3_code": "GGY",
       "en_short_name": "Guernsey",
@@ -2835,6 +2927,7 @@ class Countries {
     },
     {
       "num_code": "324",
+      "digits_without_dial":"",
       "alpha_2_code": "GN",
       "alpha_3_code": "GIN",
       "en_short_name": "Guinea",
@@ -2866,6 +2959,7 @@ class Countries {
     },
     {
       "num_code": "624",
+"digits_without_dial":"",
       "alpha_2_code": "GW",
       "alpha_3_code": "GNB",
       "en_short_name": "Guinea-Bissau",
@@ -2897,6 +2991,7 @@ class Countries {
     },
     {
       "num_code": "328",
+      "digits_without_dial":"",
       "alpha_2_code": "GY",
       "alpha_3_code": "GUY",
       "en_short_name": "Guyana",
@@ -2928,6 +3023,7 @@ class Countries {
     },
     {
       "num_code": "332",
+      "digits_without_dial":"",
       "alpha_2_code": "HT",
       "alpha_3_code": "HTI",
       "en_short_name": "Haiti",
@@ -2959,6 +3055,7 @@ class Countries {
     },
     {
       "num_code": "334",
+      "digits_without_dial":"",
       "alpha_2_code": "HM",
       "alpha_3_code": "HMD",
       "en_short_name": "Heard Island and McDonald Islands",
@@ -2990,6 +3087,7 @@ class Countries {
     },
     {
       "num_code": "336",
+      "digits_without_dial":"",
       "alpha_2_code": "VA",
       "alpha_3_code": "VAT",
       "en_short_name": "Vatican City State",
@@ -3021,6 +3119,7 @@ class Countries {
     },
     {
       "num_code": "340",
+      "digits_without_dial":"",
       "alpha_2_code": "HN",
       "alpha_3_code": "HND",
       "en_short_name": "Honduras",
@@ -3052,6 +3151,7 @@ class Countries {
     },
     {
       "num_code": "344",
+      "digits_without_dial":"",
       "alpha_2_code": "HK",
       "alpha_3_code": "HKG",
       "en_short_name": "Hong Kong",
@@ -3083,6 +3183,7 @@ class Countries {
     },
     {
       "num_code": "348",
+      "digits_without_dial":"",
       "alpha_2_code": "HU",
       "alpha_3_code": "HUN",
       "en_short_name": "Hungary",
@@ -3114,6 +3215,7 @@ class Countries {
     },
     {
       "num_code": "352",
+      "digits_without_dial":"",
       "alpha_2_code": "IS",
       "alpha_3_code": "ISL",
       "en_short_name": "Iceland",
@@ -3145,6 +3247,7 @@ class Countries {
     },
     {
       "num_code": "356",
+      "digits_without_dial":"",
       "alpha_2_code": "IN",
       "alpha_3_code": "IND",
       "en_short_name": "India",
@@ -3176,6 +3279,7 @@ class Countries {
     },
     {
       "num_code": "360",
+      "digits_without_dial":"",
       "alpha_2_code": "ID",
       "alpha_3_code": "IDN",
       "en_short_name": "Indonesia",
@@ -3207,6 +3311,7 @@ class Countries {
     },
     {
       "num_code": "364",
+        "digits_without_dial":"",
       "alpha_2_code": "IR",
       "alpha_3_code": "IRN",
       "en_short_name": "Iran",
@@ -3238,6 +3343,7 @@ class Countries {
     },
     {
       "num_code": "368",
+      "digits_without_dial":"",
       "alpha_2_code": "IQ",
       "alpha_3_code": "IRQ",
       "en_short_name": "Iraq",
@@ -3269,6 +3375,7 @@ class Countries {
     },
     {
       "num_code": "372",
+"digits_without_dial":"",
       "alpha_2_code": "IE",
       "alpha_3_code": "IRL",
       "en_short_name": "Ireland",
@@ -3300,6 +3407,7 @@ class Countries {
     },
     {
       "num_code": "833",
+      "digits_without_dial":"",
       "alpha_2_code": "IM",
       "alpha_3_code": "IMN",
       "en_short_name": "Isle of Man",
@@ -3331,6 +3439,7 @@ class Countries {
     },
     {
       "num_code": "376",
+      "digits_without_dial":"",
       "alpha_2_code": "IL",
       "alpha_3_code": "ISR",
       "en_short_name": "Israel",
@@ -3362,6 +3471,7 @@ class Countries {
     },
     {
       "num_code": "380",
+      "digits_without_dial":"",
       "alpha_2_code": "IT",
       "alpha_3_code": "ITA",
       "en_short_name": "Italy",
@@ -3393,6 +3503,7 @@ class Countries {
     },
     {
       "num_code": "388",
+      "digits_without_dial":"",
       "alpha_2_code": "JM",
       "alpha_3_code": "JAM",
       "en_short_name": "Jamaica",
@@ -3424,6 +3535,7 @@ class Countries {
     },
     {
       "num_code": "392",
+        "digits_without_dial":"",
       "alpha_2_code": "JP",
       "alpha_3_code": "JPN",
       "en_short_name": "Japan",
@@ -3455,6 +3567,7 @@ class Countries {
     },
     {
       "num_code": "832",
+      "digits_without_dial":"",
       "alpha_2_code": "JE",
       "alpha_3_code": "JEY",
       "en_short_name": "Jersey",
@@ -3486,6 +3599,7 @@ class Countries {
     },
     {
       "num_code": "400",
+      "digits_without_dial":"",
       "alpha_2_code": "JO",
       "alpha_3_code": "JOR",
       "en_short_name": "Jordan",
@@ -3517,6 +3631,7 @@ class Countries {
     },
     {
       "num_code": "398",
+      "digits_without_dial":"",
       "alpha_2_code": "KZ",
       "alpha_3_code": "KAZ",
       "en_short_name": "Kazakhstan",
@@ -3548,6 +3663,7 @@ class Countries {
     },
     {
       "num_code": "404",
+        "digits_without_dial":"",
       "alpha_2_code": "KE",
       "alpha_3_code": "KEN",
       "en_short_name": "Kenya",
@@ -3579,6 +3695,7 @@ class Countries {
     },
     {
       "num_code": "296",
+      "digits_without_dial":"",
       "alpha_2_code": "KI",
       "alpha_3_code": "KIR",
       "en_short_name": "Kiribati",
@@ -3610,6 +3727,7 @@ class Countries {
     },
     {
       "num_code": "408",
+"digits_without_dial":"",
       "alpha_2_code": "KP",
       "alpha_3_code": "PRK",
       "en_short_name": "Korea (Democratic People's Republic of)",
@@ -3641,6 +3759,7 @@ class Countries {
     },
     {
       "num_code": "410",
+"digits_without_dial":"",
       "alpha_2_code": "KR",
       "alpha_3_code": "KOR",
       "en_short_name": "Korea (Republic of)",
@@ -3672,6 +3791,7 @@ class Countries {
     },
     {
       "num_code": "414",
+"digits_without_dial":"",
       "alpha_2_code": "KW",
       "alpha_3_code": "KWT",
       "en_short_name": "Kuwait",
@@ -3703,6 +3823,7 @@ class Countries {
     },
     {
       "num_code": "417",
+      "digits_without_dial":"",
       "alpha_2_code": "KG",
       "alpha_3_code": "KGZ",
       "en_short_name": "Kyrgyzstan",
@@ -3734,6 +3855,7 @@ class Countries {
     },
     {
       "num_code": "418",
+"digits_without_dial":"",
       "alpha_2_code": "LA",
       "alpha_3_code": "LAO",
       "en_short_name": "Lao People's Democratic Republic",
@@ -3765,6 +3887,7 @@ class Countries {
     },
     {
       "num_code": "428",
+      "digits_without_dial":"",
       "alpha_2_code": "LV",
       "alpha_3_code": "LVA",
       "en_short_name": "Latvia",
@@ -3796,6 +3919,7 @@ class Countries {
     },
     {
       "num_code": "422",
+      "digits_without_dial":"",
       "alpha_2_code": "LB",
       "alpha_3_code": "LBN",
       "en_short_name": "Lebanon",
@@ -3827,6 +3951,7 @@ class Countries {
     },
     {
       "num_code": "426",
+      "digits_without_dial":"",
       "alpha_2_code": "LS",
       "alpha_3_code": "LSO",
       "en_short_name": "Lesotho",
@@ -3858,6 +3983,7 @@ class Countries {
     },
     {
       "num_code": "430",
+      "digits_without_dial":"",
       "alpha_2_code": "LR",
       "alpha_3_code": "LBR",
       "en_short_name": "Liberia",
@@ -3889,6 +4015,7 @@ class Countries {
     },
     {
       "num_code": "434",
+"digits_without_dial":"",
       "alpha_2_code": "LY",
       "alpha_3_code": "LBY",
       "en_short_name": "Libya",
@@ -3920,6 +4047,7 @@ class Countries {
     },
     {
       "num_code": "438",
+      "digits_without_dial":"",
       "alpha_2_code": "LI",
       "alpha_3_code": "LIE",
       "en_short_name": "Liechtenstein",
@@ -3951,6 +4079,7 @@ class Countries {
     },
     {
       "num_code": "440",
+      "digits_without_dial":"",
       "alpha_2_code": "LT",
       "alpha_3_code": "LTU",
       "en_short_name": "Lithuania",
@@ -3982,6 +4111,7 @@ class Countries {
     },
     {
       "num_code": "442",
+      "digits_without_dial":"",
       "alpha_2_code": "LU",
       "alpha_3_code": "LUX",
       "en_short_name": "Luxembourg",
@@ -4013,6 +4143,7 @@ class Countries {
     },
     {
       "num_code": "446",
+"digits_without_dial":"",
       "alpha_2_code": "MO",
       "alpha_3_code": "MAC",
       "en_short_name": "Macao",
@@ -4044,6 +4175,7 @@ class Countries {
     },
     {
       "num_code": "807",
+ "digits_without_dial":"",
       "alpha_2_code": "MK",
       "alpha_3_code": "MKD",
       "en_short_name": "Macedonia (the former Yugoslav Republic of)",
@@ -4075,6 +4207,7 @@ class Countries {
     },
     {
       "num_code": "450",
+ "digits_without_dial":"",
       "alpha_2_code": "MG",
       "alpha_3_code": "MDG",
       "en_short_name": "Madagascar",
@@ -4106,6 +4239,7 @@ class Countries {
     },
     {
       "num_code": "454",
+      "digits_without_dial":"",
       "alpha_2_code": "MW",
       "alpha_3_code": "MWI",
       "en_short_name": "Malawi",
@@ -4137,6 +4271,7 @@ class Countries {
     },
     {
       "num_code": "458",
+      "digits_without_dial":"",
       "alpha_2_code": "MY",
       "alpha_3_code": "MYS",
       "en_short_name": "Malaysia",
@@ -4168,6 +4303,7 @@ class Countries {
     },
     {
       "num_code": "462",
+      "digits_without_dial":"",
       "alpha_2_code": "MV",
       "alpha_3_code": "MDV",
       "en_short_name": "Maldives",
@@ -4199,6 +4335,7 @@ class Countries {
     },
     {
       "num_code": "466",
+        "digits_without_dial":"",
       "alpha_2_code": "ML",
       "alpha_3_code": "MLI",
       "en_short_name": "Mali",
@@ -4230,6 +4367,7 @@ class Countries {
     },
     {
       "num_code": "470",
+      "digits_without_dial":"",
       "alpha_2_code": "MT",
       "alpha_3_code": "MLT",
       "en_short_name": "Malta",
@@ -4261,6 +4399,7 @@ class Countries {
     },
     {
       "num_code": "584",
+"digits_without_dial":"",
       "alpha_2_code": "MH",
       "alpha_3_code": "MHL",
       "en_short_name": "Marshall Islands",
@@ -4292,6 +4431,7 @@ class Countries {
     },
     {
       "num_code": "474",
+"digits_without_dial":"",
       "alpha_2_code": "MQ",
       "alpha_3_code": "MTQ",
       "en_short_name": "Martinique",
@@ -4323,6 +4463,7 @@ class Countries {
     },
     {
       "num_code": "478",
+      "digits_without_dial":"",
       "alpha_2_code": "MR",
       "alpha_3_code": "MRT",
       "en_short_name": "Mauritania",
@@ -4354,6 +4495,7 @@ class Countries {
     },
     {
       "num_code": "480",
+      "digits_without_dial":"",
       "alpha_2_code": "MU",
       "alpha_3_code": "MUS",
       "en_short_name": "Mauritius",
@@ -4385,6 +4527,7 @@ class Countries {
     },
     {
       "num_code": "175",
+"digits_without_dial":"",
       "alpha_2_code": "YT",
       "alpha_3_code": "MYT",
       "en_short_name": "Mayotte",
@@ -4416,6 +4559,7 @@ class Countries {
     },
     {
       "num_code": "484",
+      "digits_without_dial":"",
       "alpha_2_code": "MX",
       "alpha_3_code": "MEX",
       "en_short_name": "Mexico",
@@ -4447,6 +4591,7 @@ class Countries {
     },
     {
       "num_code": "583",
+      "digits_without_dial":"",
       "alpha_2_code": "FM",
       "alpha_3_code": "FSM",
       "en_short_name": "Micronesia (Federated States of)",
@@ -4478,6 +4623,7 @@ class Countries {
     },
     {
       "num_code": "498",
+      "digits_without_dial":"",
       "alpha_2_code": "MD",
       "alpha_3_code": "MDA",
       "en_short_name": "Moldova (Republic of)",
@@ -4509,6 +4655,7 @@ class Countries {
     },
     {
       "num_code": "492",
+      "digits_without_dial":"",
       "alpha_2_code": "MC",
       "alpha_3_code": "MCO",
       "en_short_name": "Monaco",
@@ -4540,6 +4687,7 @@ class Countries {
     },
     {
       "num_code": "496",
+      "digits_without_dial":"",
       "alpha_2_code": "MN",
       "alpha_3_code": "MNG",
       "en_short_name": "Mongolia",
@@ -4571,6 +4719,7 @@ class Countries {
     },
     {
       "num_code": "499",
+      "digits_without_dial":"",
       "alpha_2_code": "ME",
       "alpha_3_code": "MNE",
       "en_short_name": "Montenegro",
@@ -4602,6 +4751,7 @@ class Countries {
     },
     {
       "num_code": "500",
+      "digits_without_dial":"",
       "alpha_2_code": "MS",
       "alpha_3_code": "MSR",
       "en_short_name": "Montserrat",
@@ -4633,6 +4783,7 @@ class Countries {
     },
     {
       "num_code": "504",
+      "digits_without_dial":"",
       "alpha_2_code": "MA",
       "alpha_3_code": "MAR",
       "en_short_name": "Morocco",
@@ -4664,6 +4815,7 @@ class Countries {
     },
     {
       "num_code": "508",
+      "digits_without_dial":"",
       "alpha_2_code": "MZ",
       "alpha_3_code": "MOZ",
       "en_short_name": "Mozambique",
@@ -4695,6 +4847,7 @@ class Countries {
     },
     {
       "num_code": "104",
+      "digits_without_dial":"",
       "alpha_2_code": "MM",
       "alpha_3_code": "MMR",
       "en_short_name": "Myanmar",
@@ -4726,6 +4879,7 @@ class Countries {
     },
     {
       "num_code": "516",
+      "digits_without_dial":"",
       "alpha_2_code": "NA",
       "alpha_3_code": "NAM",
       "en_short_name": "Namibia",
@@ -4757,6 +4911,7 @@ class Countries {
     },
     {
       "num_code": "520",
+"digits_without_dial":"",
       "alpha_2_code": "NR",
       "alpha_3_code": "NRU",
       "en_short_name": "Nauru",
@@ -4788,6 +4943,7 @@ class Countries {
     },
     {
       "num_code": "524",
+        "digits_without_dial":"",
       "alpha_2_code": "NP",
       "alpha_3_code": "NPL",
       "en_short_name": "Nepal",
@@ -4819,6 +4975,7 @@ class Countries {
     },
     {
       "num_code": "528",
+      "digits_without_dial":"",
       "alpha_2_code": "NL",
       "alpha_3_code": "NLD",
       "en_short_name": "Netherlands",
@@ -4850,6 +5007,7 @@ class Countries {
     },
     {
       "num_code": "540",
+      "digits_without_dial":"",
       "alpha_2_code": "NC",
       "alpha_3_code": "NCL",
       "en_short_name": "New Caledonia",
@@ -4881,6 +5039,7 @@ class Countries {
     },
     {
       "num_code": "554",
+        "digits_without_dial":"",
       "alpha_2_code": "NZ",
       "alpha_3_code": "NZL",
       "en_short_name": "New Zealand",
@@ -4912,6 +5071,7 @@ class Countries {
     },
     {
       "num_code": "558",
+      "digits_without_dial":"",
       "alpha_2_code": "NI",
       "alpha_3_code": "NIC",
       "en_short_name": "Nicaragua",
@@ -4943,6 +5103,7 @@ class Countries {
     },
     {
       "num_code": "562",
+      "digits_without_dial":"",
       "alpha_2_code": "NE",
       "alpha_3_code": "NER",
       "en_short_name": "Niger",
@@ -4974,6 +5135,7 @@ class Countries {
     },
     {
       "num_code": "566",
+      "digits_without_dial":"",
       "alpha_2_code": "NG",
       "alpha_3_code": "NGA",
       "en_short_name": "Nigeria",
@@ -5005,6 +5167,7 @@ class Countries {
     },
     {
       "num_code": "570",
+"digits_without_dial":"",
       "alpha_2_code": "NU",
       "alpha_3_code": "NIU",
       "en_short_name": "Niue",
@@ -5036,6 +5199,7 @@ class Countries {
     },
     {
       "num_code": "574",
+"digits_without_dial":"",
       "alpha_2_code": "NF",
       "alpha_3_code": "NFK",
       "en_short_name": "Norfolk Island",
@@ -5067,6 +5231,7 @@ class Countries {
     },
     {
       "num_code": "580",
+      "digits_without_dial":"",
       "alpha_2_code": "MP",
       "alpha_3_code": "MNP",
       "en_short_name": "Northern Mariana Islands",
@@ -5098,6 +5263,7 @@ class Countries {
     },
     {
       "num_code": "578",
+"digits_without_dial":"",
       "alpha_2_code": "NO",
       "alpha_3_code": "NOR",
       "en_short_name": "Norway",
@@ -5129,6 +5295,7 @@ class Countries {
     },
     {
       "num_code": "512",
+"digits_without_dial":"",
       "alpha_2_code": "OM",
       "alpha_3_code": "OMN",
       "en_short_name": "Oman",
@@ -5160,6 +5327,7 @@ class Countries {
     },
     {
       "num_code": "586",
+      "digits_without_dial":"",
       "alpha_2_code": "PK",
       "alpha_3_code": "PAK",
       "en_short_name": "Pakistan",
@@ -5191,6 +5359,7 @@ class Countries {
     },
     {
       "num_code": "585",
+      "digits_without_dial":"",
       "alpha_2_code": "PW",
       "alpha_3_code": "PLW",
       "en_short_name": "Palau",
@@ -5222,6 +5391,7 @@ class Countries {
     },
     {
       "num_code": "275",
+      "digits_without_dial":"",
       "alpha_2_code": "PS",
       "alpha_3_code": "PSE",
       "en_short_name": "Palestine, State of",
@@ -5253,6 +5423,7 @@ class Countries {
     },
     {
       "num_code": "591",
+      "digits_without_dial":"",
       "alpha_2_code": "PA",
       "alpha_3_code": "PAN",
       "en_short_name": "Panama",
@@ -5284,6 +5455,7 @@ class Countries {
     },
     {
       "num_code": "598",
+        "digits_without_dial":"",
       "alpha_2_code": "PG",
       "alpha_3_code": "PNG",
       "en_short_name": "Papua New Guinea",
@@ -5315,6 +5487,7 @@ class Countries {
     },
     {
       "num_code": "600",
+"digits_without_dial":"",
       "alpha_2_code": "PY",
       "alpha_3_code": "PRY",
       "en_short_name": "Paraguay",
@@ -5346,6 +5519,7 @@ class Countries {
     },
     {
       "num_code": "604",
+      "digits_without_dial":"",
       "alpha_2_code": "PE",
       "alpha_3_code": "PER",
       "en_short_name": "Peru",
@@ -5377,6 +5551,7 @@ class Countries {
     },
     {
       "num_code": "608",
+      "digits_without_dial":"",
       "alpha_2_code": "PH",
       "alpha_3_code": "PHL",
       "en_short_name": "Philippines",
@@ -5408,6 +5583,7 @@ class Countries {
     },
     {
       "num_code": "612",
+    "digits_without_dial":"",
       "alpha_2_code": "PN",
       "alpha_3_code": "PCN",
       "en_short_name": "Pitcairn",
@@ -5439,6 +5615,7 @@ class Countries {
     },
     {
       "num_code": "616",
+      "digits_without_dial":"",
       "alpha_2_code": "PL",
       "alpha_3_code": "POL",
       "en_short_name": "Poland",
@@ -5470,6 +5647,7 @@ class Countries {
     },
     {
       "num_code": "620",
+      "digits_without_dial":"",
       "alpha_2_code": "PT",
       "alpha_3_code": "PRT",
       "en_short_name": "Portugal",
@@ -5501,6 +5679,7 @@ class Countries {
     },
     {
       "num_code": "630",
+      "digits_without_dial":"",
       "alpha_2_code": "PR",
       "alpha_3_code": "PRI",
       "en_short_name": "Puerto Rico",
@@ -5532,6 +5711,7 @@ class Countries {
     },
     {
       "num_code": "634",
+      "digits_without_dial":"",
       "alpha_2_code": "QA",
       "alpha_3_code": "QAT",
       "en_short_name": "Qatar",
@@ -5563,6 +5743,7 @@ class Countries {
     },
     {
       "num_code": "638",
+      "digits_without_dial":"",
       "alpha_2_code": "RE",
       "alpha_3_code": "REU",
       "en_short_name": "Réunion",
@@ -5594,6 +5775,7 @@ class Countries {
     },
     {
       "num_code": "642",
+ "digits_without_dial":"",
       "alpha_2_code": "RO",
       "alpha_3_code": "ROU",
       "en_short_name": "Romania",
@@ -5625,6 +5807,7 @@ class Countries {
     },
     {
       "num_code": "643",
+        "digits_without_dial":"",
       "alpha_2_code": "RU",
       "alpha_3_code": "RUS",
       "en_short_name": "Russian Federation",
@@ -5656,6 +5839,7 @@ class Countries {
     },
     {
       "num_code": "646",
+"digits_without_dial":"",
       "alpha_2_code": "RW",
       "alpha_3_code": "RWA",
       "en_short_name": "Rwanda",
@@ -5687,6 +5871,7 @@ class Countries {
     },
     {
       "num_code": "652",
+      "digits_without_dial":"",
       "alpha_2_code": "BL",
       "alpha_3_code": "BLM",
       "en_short_name": "Saint Barthélemy",
@@ -5718,6 +5903,7 @@ class Countries {
     },
     {
       "num_code": "654",
+      "digits_without_dial":"",
       "alpha_2_code": "SH",
       "alpha_3_code": "SHN",
       "en_short_name": "Saint Helena, Ascension and Tristan da Cunha",
@@ -5749,6 +5935,7 @@ class Countries {
     },
     {
       "num_code": "659",
+      "digits_without_dial":"",
       "alpha_2_code": "KN",
       "alpha_3_code": "KNA",
       "en_short_name": "Saint Kitts and Nevis",
@@ -5780,6 +5967,7 @@ class Countries {
     },
     {
       "num_code": "662",
+      "digits_without_dial":"",
       "alpha_2_code": "LC",
       "alpha_3_code": "LCA",
       "en_short_name": "Saint Lucia",
@@ -5811,6 +5999,7 @@ class Countries {
     },
     {
       "num_code": "663",
+      "digits_without_dial":"",
       "alpha_2_code": "MF",
       "alpha_3_code": "MAF",
       "en_short_name": "Saint Martin (French part)",
@@ -5842,6 +6031,7 @@ class Countries {
     },
     {
       "num_code": "666",
+      "digits_without_dial":"",
       "alpha_2_code": "PM",
       "alpha_3_code": "SPM",
       "en_short_name": "Saint Pierre and Miquelon",
@@ -5873,6 +6063,7 @@ class Countries {
     },
     {
       "num_code": "670",
+ "digits_without_dial":"",
       "alpha_2_code": "VC",
       "alpha_3_code": "VCT",
       "en_short_name": "Saint Vincent and the Grenadines",
@@ -5904,6 +6095,7 @@ class Countries {
     },
     {
       "num_code": "882",
+      "digits_without_dial":"",
       "alpha_2_code": "WS",
       "alpha_3_code": "WSM",
       "en_short_name": "Samoa",
@@ -5935,6 +6127,7 @@ class Countries {
     },
     {
       "num_code": "674",
+      "digits_without_dial":"",
       "alpha_2_code": "SM",
       "alpha_3_code": "SMR",
       "en_short_name": "San Marino",
@@ -5966,6 +6159,7 @@ class Countries {
     },
     {
       "num_code": "678",
+      "digits_without_dial":"",
       "alpha_2_code": "ST",
       "alpha_3_code": "STP",
       "en_short_name": "Sao Tome and Principe",
@@ -5997,6 +6191,7 @@ class Countries {
     },
     {
       "num_code": "682",
+      "digits_without_dial":"",
       "alpha_2_code": "SA",
       "alpha_3_code": "SAU",
       "en_short_name": "Saudi Arabia",
@@ -6028,6 +6223,7 @@ class Countries {
     },
     {
       "num_code": "686",
+"digits_without_dial":"",
       "alpha_2_code": "SN",
       "alpha_3_code": "SEN",
       "en_short_name": "Senegal",
@@ -6059,6 +6255,7 @@ class Countries {
     },
     {
       "num_code": "688",
+      "digits_without_dial":"",
       "alpha_2_code": "RS",
       "alpha_3_code": "SRB",
       "en_short_name": "Serbia",
@@ -6090,6 +6287,7 @@ class Countries {
     },
     {
       "num_code": "690",
+      "digits_without_dial":"",
       "alpha_2_code": "SC",
       "alpha_3_code": "SYC",
       "en_short_name": "Seychelles",
@@ -6121,6 +6319,7 @@ class Countries {
     },
     {
       "num_code": "694",
+      "digits_without_dial":"",
       "alpha_2_code": "SL",
       "alpha_3_code": "SLE",
       "en_short_name": "Sierra Leone",
@@ -6152,6 +6351,7 @@ class Countries {
     },
     {
       "num_code": "702",
+        "digits_without_dial":"",
       "alpha_2_code": "SG",
       "alpha_3_code": "SGP",
       "en_short_name": "Singapore",
@@ -6183,6 +6383,7 @@ class Countries {
     },
     {
       "num_code": "703",
+      "digits_without_dial":"",
       "alpha_2_code": "SK",
       "alpha_3_code": "SVK",
       "en_short_name": "Slovakia",
@@ -6214,6 +6415,7 @@ class Countries {
     },
     {
       "num_code": "705",
+      "digits_without_dial":"",
       "alpha_2_code": "SI",
       "alpha_3_code": "SVN",
       "en_short_name": "Slovenia",
@@ -6245,6 +6447,7 @@ class Countries {
     },
     {
       "num_code": "90",
+"digits_without_dial":"",
       "alpha_2_code": "SB",
       "alpha_3_code": "SLB",
       "en_short_name": "Solomon Islands",
@@ -6276,6 +6479,7 @@ class Countries {
     },
     {
       "num_code": "706",
+      "digits_without_dial":"",
       "alpha_2_code": "SO",
       "alpha_3_code": "SOM",
       "en_short_name": "Somalia",
@@ -6307,6 +6511,7 @@ class Countries {
     },
     {
       "num_code": "710",
+      "digits_without_dial":"",
       "alpha_2_code": "ZA",
       "alpha_3_code": "ZAF",
       "en_short_name": "South Africa",
@@ -6338,6 +6543,7 @@ class Countries {
     },
     {
       "num_code": "239",
+"digits_without_dial":"",
       "alpha_2_code": "GS",
       "alpha_3_code": "SGS",
       "en_short_name": "South Georgia and the South Sandwich Islands",
@@ -6369,6 +6575,7 @@ class Countries {
     },
     {
       "num_code": "728",
+"digits_without_dial":"",
       "alpha_2_code": "SS",
       "alpha_3_code": "SSD",
       "en_short_name": "South Sudan",
@@ -6400,6 +6607,7 @@ class Countries {
     },
     {
       "num_code": "724",
+      "digits_without_dial":"",
       "alpha_2_code": "ES",
       "alpha_3_code": "ESP",
       "en_short_name": "Spain",
@@ -6431,6 +6639,7 @@ class Countries {
     },
     {
       "num_code": "144",
+"digits_without_dial":"",
       "alpha_2_code": "LK",
       "alpha_3_code": "LKA",
       "en_short_name": "Sri Lanka",
@@ -6462,6 +6671,7 @@ class Countries {
     },
     {
       "num_code": "729",
+      "digits_without_dial":"",
       "alpha_2_code": "SD",
       "alpha_3_code": "SDN",
       "en_short_name": "Sudan",
@@ -6493,6 +6703,7 @@ class Countries {
     },
     {
       "num_code": "740",
+"digits_without_dial":"",
       "alpha_2_code": "SR",
       "alpha_3_code": "SUR",
       "en_short_name": "Suriname",
@@ -6524,6 +6735,7 @@ class Countries {
     },
     {
       "num_code": "744",
+      "digits_without_dial":"",
       "alpha_2_code": "SJ",
       "alpha_3_code": "SJM",
       "en_short_name": "Svalbard and Jan Mayen",
@@ -6555,6 +6767,7 @@ class Countries {
     },
     {
       "num_code": "748",
+      "digits_without_dial":"",
       "alpha_2_code": "SZ",
       "alpha_3_code": "SWZ",
       "en_short_name": "Swaziland",
@@ -6586,6 +6799,7 @@ class Countries {
     },
     {
       "num_code": "752",
+      "digits_without_dial":"",
       "alpha_2_code": "SE",
       "alpha_3_code": "SWE",
       "en_short_name": "Sweden",
@@ -6617,6 +6831,7 @@ class Countries {
     },
     {
       "num_code": "756",
+      "digits_without_dial":"",
       "alpha_2_code": "CH",
       "alpha_3_code": "CHE",
       "en_short_name": "Switzerland",
@@ -6648,6 +6863,7 @@ class Countries {
     },
     {
       "num_code": "760",
+"digits_without_dial":"",
       "alpha_2_code": "SY",
       "alpha_3_code": "SYR",
       "en_short_name": "Syrian Arab Republic",
@@ -6679,6 +6895,7 @@ class Countries {
     },
     {
       "num_code": "158",
+      "digits_without_dial":"",
       "alpha_2_code": "TW",
       "alpha_3_code": "TWN",
       "en_short_name": "Taiwan",
@@ -6710,6 +6927,7 @@ class Countries {
     },
     {
       "num_code": "762",
+      "digits_without_dial":"",
       "alpha_2_code": "TJ",
       "alpha_3_code": "TJK",
       "en_short_name": "Tajikistan",
@@ -6741,6 +6959,7 @@ class Countries {
     },
     {
       "num_code": "834",
+      "digits_without_dial":"",
       "alpha_2_code": "TZ",
       "alpha_3_code": "TZA",
       "en_short_name": "Tanzania, United Republic of",
@@ -6772,6 +6991,7 @@ class Countries {
     },
     {
       "num_code": "764",
+      "digits_without_dial":"",
       "alpha_2_code": "TH",
       "alpha_3_code": "THA",
       "en_short_name": "Thailand",
@@ -6803,6 +7023,7 @@ class Countries {
     },
     {
       "num_code": "626",
+      "digits_without_dial":"",
       "alpha_2_code": "TL",
       "alpha_3_code": "TLS",
       "en_short_name": "Timor-Leste",
@@ -6834,6 +7055,7 @@ class Countries {
     },
     {
       "num_code": "768",
+      "digits_without_dial":"",
       "alpha_2_code": "TG",
       "alpha_3_code": "TGO",
       "en_short_name": "Togo",
@@ -6865,6 +7087,7 @@ class Countries {
     },
     {
       "num_code": "772",
+      "digits_without_dial":"",
       "alpha_2_code": "TK",
       "alpha_3_code": "TKL",
       "en_short_name": "Tokelau",
@@ -6896,6 +7119,7 @@ class Countries {
     },
     {
       "num_code": "776",
+ "digits_without_dial":"",
       "alpha_2_code": "TO",
       "alpha_3_code": "TON",
       "en_short_name": "Tonga",
@@ -6927,6 +7151,7 @@ class Countries {
     },
     {
       "num_code": "780",
+ "digits_without_dial":"",
       "alpha_2_code": "TT",
       "alpha_3_code": "TTO",
       "en_short_name": "Trinidad and Tobago",
@@ -6958,6 +7183,7 @@ class Countries {
     },
     {
       "num_code": "788",
+      "digits_without_dial":"",
       "alpha_2_code": "TN",
       "alpha_3_code": "TUN",
       "en_short_name": "Tunisia",
@@ -6989,6 +7215,7 @@ class Countries {
     },
     {
       "num_code": "792",
+      "digits_without_dial":"",
       "alpha_2_code": "TR",
       "alpha_3_code": "TUR",
       "en_short_name": "Turkey",
@@ -7020,6 +7247,7 @@ class Countries {
     },
     {
       "num_code": "795",
+      "digits_without_dial":"",
       "alpha_2_code": "TM",
       "alpha_3_code": "TKM",
       "en_short_name": "Turkmenistan",
@@ -7051,6 +7279,7 @@ class Countries {
     },
     {
       "num_code": "796",
+      "digits_without_dial":"",
       "alpha_2_code": "TC",
       "alpha_3_code": "TCA",
       "en_short_name": "Turks and Caicos Islands",
@@ -7082,6 +7311,7 @@ class Countries {
     },
     {
       "num_code": "798",
+"digits_without_dial":"",
       "alpha_2_code": "TV",
       "alpha_3_code": "TUV",
       "en_short_name": "Tuvalu",
@@ -7113,6 +7343,7 @@ class Countries {
     },
     {
       "num_code": "800",
+      "digits_without_dial":"",
       "alpha_2_code": "UG",
       "alpha_3_code": "UGA",
       "en_short_name": "Uganda",
@@ -7144,6 +7375,7 @@ class Countries {
     },
     {
       "num_code": "804",
+"digits_without_dial":"",
       "alpha_2_code": "UA",
       "alpha_3_code": "UKR",
       "en_short_name": "Ukraine",
@@ -7175,6 +7407,7 @@ class Countries {
     },
     {
       "num_code": "784",
+      "digits_without_dial":"",
       "alpha_2_code": "AE",
       "alpha_3_code": "ARE",
       "en_short_name": "United Arab Emirates",
@@ -7206,6 +7439,7 @@ class Countries {
     },
     {
       "num_code": "826",
+"digits_without_dial":"",
       "alpha_2_code": "GB",
       "alpha_3_code": "GBR",
       "en_short_name": "United Kingdom of Great Britain and Northern Ireland",
@@ -7237,6 +7471,7 @@ class Countries {
     },
     {
       "num_code": "840",
+"digits_without_dial":"",
       "alpha_2_code": "US",
       "alpha_3_code": "USA",
       "en_short_name": "United States of America",
@@ -7268,6 +7503,7 @@ class Countries {
     },
     {
       "num_code": "858",
+        "digits_without_dial":"",
       "alpha_2_code": "UY",
       "alpha_3_code": "URY",
       "en_short_name": "Uruguay",
@@ -7299,6 +7535,7 @@ class Countries {
     },
     {
       "num_code": "860",
+      "digits_without_dial":"",
       "alpha_2_code": "UZ",
       "alpha_3_code": "UZB",
       "en_short_name": "Uzbekistan",
@@ -7330,6 +7567,7 @@ class Countries {
     },
     {
       "num_code": "548",
+"digits_without_dial":"",
       "alpha_2_code": "VU",
       "alpha_3_code": "VUT",
       "en_short_name": "Vanuatu",
@@ -7361,6 +7599,7 @@ class Countries {
     },
     {
       "num_code": "862",
+      "digits_without_dial":"",
       "alpha_2_code": "VE",
       "alpha_3_code": "VEN",
       "en_short_name": "Venezuela (Bolivarian Republic of)",
@@ -7392,6 +7631,7 @@ class Countries {
     },
     {
       "num_code": "704",
+      "digits_without_dial":"",
       "alpha_2_code": "VN",
       "alpha_3_code": "VNM",
       "en_short_name": "Vietnam",
@@ -7423,6 +7663,7 @@ class Countries {
     },
     {
       "num_code": "92",
+      "digits_without_dial":"",
       "alpha_2_code": "VG",
       "alpha_3_code": "VGB",
       "en_short_name": "Virgin Islands (British)",
@@ -7454,6 +7695,7 @@ class Countries {
     },
     {
       "num_code": "850",
+      "digits_without_dial":"",
       "alpha_2_code": "VI",
       "alpha_3_code": "VIR",
       "en_short_name": "Virgin Islands (U.S.)",
@@ -7485,6 +7727,7 @@ class Countries {
     },
     {
       "num_code": "876",
+      "digits_without_dial":"",
       "alpha_2_code": "WF",
       "alpha_3_code": "WLF",
       "en_short_name": "Wallis and Futuna",
@@ -7516,6 +7759,7 @@ class Countries {
     },
     {
       "num_code": "887",
+      "digits_without_dial":"",
       "alpha_2_code": "YE",
       "alpha_3_code": "YEM",
       "en_short_name": "Yemen",
@@ -7547,6 +7791,7 @@ class Countries {
     },
     {
       "num_code": "894",
+"digits_without_dial":"",
       "alpha_2_code": "ZM",
       "alpha_3_code": "ZMB",
       "en_short_name": "Zambia",
@@ -7578,6 +7823,7 @@ class Countries {
     },
     {
       "num_code": "716",
+"digits_without_dial":"",
       "alpha_2_code": "ZW",
       "alpha_3_code": "ZWE",
       "en_short_name": "Zimbabwe",
