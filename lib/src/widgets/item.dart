@@ -29,6 +29,7 @@ class Item extends StatelessWidget {
     if (trailingSpace) {
       dialCode = dialCode.padRight(5, "   ");
     }
+    print('Current flag ${country}');
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -38,14 +39,17 @@ class Item extends StatelessWidget {
           _Flag(
             country: country,
             showFlag: showFlag,
-            useEmoji: useEmoji,
+            useEmoji: true,
           ),
           SizedBox(width: 12.0),
           Text(
-            '$dialCode',
-            textDirection: TextDirection.ltr,
-            style: textStyle,
+            '${country?.name??'Country'}'
           ),
+          // Text(
+          //   '$dialCode',
+          //   textDirection: TextDirection.ltr,
+          //   style: textStyle,
+          // ),
         ],
       ),
     );

@@ -2063,7 +2063,7 @@ class Countries {
     },
     {
       "num_code": "818",
-      "digits_without_dial": "",
+      "digits_without_dial": "10",
       "alpha_2_code": "EG",
       "alpha_3_code": "EGY",
       "en_short_name": "Egypt",

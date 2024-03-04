@@ -21,12 +21,17 @@ class Country {
   /// The nameTranslation for translation
   final Map<String, String>? nameTranslations;
 
+
+  /// The nameTranslation for translation
+  final String digit;
+
   Country({
     required this.name,
     required this.alpha2Code,
     required this.alpha3Code,
     required this.dialCode,
     required this.flagUri,
+    required this.digit,
     this.nameTranslations,
   });
 
@@ -34,6 +39,7 @@ class Country {
   factory Country.fromJson(Map<String, dynamic> data) {
     return Country(
       name: data['en_short_name'],
+      digit: data['digits_without_dial'],
       alpha2Code: data['alpha_2_code'],
       alpha3Code: data['alpha_3_code'],
       dialCode: data['dial_code'],
