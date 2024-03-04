@@ -183,15 +183,15 @@ class _MyTextFieldState extends State<MyTextField> {
   String previousText = '';
 
   void _listener() {
-    String currentText = _controller.text;
+    String currentText = _controller.text.replaceAll('  ', '');
 
     if (previousText.length > currentText.length) {
       // Backspace pressed
       _remainsZero
           .replaceRange(currentText.length, currentText.length + 1, ['0']);
     } else if (previousText.length < currentText.length) {
-      // New character pressed
-      // _remainsZero.replaceRange(currentText.length - 1, currentText.length, [currentText.split('').last]);
+      print('currentText ${currentText.length}');
+      print('previousText ${previousText.length}');
       _remainsZero.replaceRange(
           currentText.length - 1, currentText.length, [''.padLeft(1)]);
     }
@@ -240,21 +240,25 @@ class _MyTextFieldState extends State<MyTextField> {
                 hintText: _hintText,
                 hintStyle: TextStyle(
                   fontSize: 18,
-                  letterSpacing: 1.7,
+                  letterSpacing: 2,
                 ),
-                suffixText: ''.padLeft(_controller.text.length * 2),
+                suffixText: ''.padLeft(_controller.text.replaceAll('  ', '').length * 2),
                 border: InputBorder.none,
                 contentPadding: EdgeInsets.zero
               ),
             ),
             TextFormField(
               keyboardType: TextInputType.number,
-              textDirection: TextDirection.rtl,
+              textDirection: TextDirection.ltr,
               controller: _controller,
               textAlign: TextAlign.left,
+              inputFormatters: [
+                CardNumberInputFormatter(),
+              ],
               style: TextStyle(
                   fontSize: 18,
-                letterSpacing: 2,
+                letterSpacing: -2,
+                // backgroundColor: Colors.red,
               ),
               onTapOutside: (event) => FocusManager.instance.primaryFocus?.unfocus(),
               decoration: InputDecoration(
@@ -269,3 +273,96 @@ class _MyTextFieldState extends State<MyTextField> {
   }
 }
 
+class _BlankSpaceFormatter extends TextInputFormatter {
+  @override
+  TextEditingValue formatEditUpdate(TextEditingValue oldValue, TextEditingValue newValue) {
+    String newText = newValue.text.replaceAll(' ', ''); // Remove existing spaces
+    String formattedText = '';
+    int selectionIndex = newValue.selection.start;
+
+    for (int i = 0; i < newText.length; i++) {
+      formattedText += newText[i];
+      if (i != newText.length - 1) {
+        formattedText += ' ';
+        if (i < selectionIndex) {
+          selectionIndex++;
+        }
+      }
+    }
+
+    return TextEditingValue(
+      text: formattedText,
+      selection: TextSelection.collapsed(offset: selectionIndex),
+    );
+  }
+}
+
+
+class DigitPersianFormatter extends TextInputFormatter {
+  @override
+  TextEditingValue formatEditUpdate(
+      TextEditingValue oldValue, TextEditingValue newValue) {
+
+    String persianInput = addSpaceBetweenChars(newValue.text);
+    int selectionIndex = newValue.selection.end;
+    return newValue.copyWith(
+      text: persianInput,
+      selection: TextSelection.collapsed(offset: selectionIndex),
+    );
+  }
+
+  String addSpaceBetweenChars(String input) {
+    String result = '';
+    for (int i = 0; i < input.length; i++) {
+      result += input[i];
+      if (i != input.length - 1) {
+        result += ' ';
+      }
+    }
+    return result;
+  }
+}
+
+class CardNumberInputFormatter extends TextInputFormatter {
+  @override
+  TextEditingValue formatEditUpdate(
+      TextEditingValue oldValue, TextEditingValue newValue) {
+    var text = removeArabicNumbers(newValue.text);
+
+    if (newValue.selection.baseOffset == 0) {
+      return newValue;
+    }
+
+    var formattedText = _formatCardNumber(text);
+    return TextEditingValue(
+      text: formattedText,
+      selection: TextSelection.collapsed(offset: formattedText.length),
+    );
+  }
+
+  String _formatCardNumber(String input) {
+    input = input.replaceAll(RegExp(r'\D'), ''); // Remove non-digits
+    var buffer = StringBuffer();
+    for (int i = 0; i < input.length; i++) {
+      buffer.write(input[i]);
+      var nonZeroIndex = i + 1;
+      if (nonZeroIndex % 1 == 0 && nonZeroIndex != input.length) {
+        // Add double spaces
+        buffer.write('  ');
+      }
+    }
+    return buffer.toString();
+  }
+}
+
+String removeArabicNumbers(String text) => text
+    .replaceAll('١', '1')
+    .replaceAll('٢', '2')
+    .replaceAll('٣', '3')
+    .replaceAll('٤', '4')
+    .replaceAll('٥', '5')
+    .replaceAll('٦', '6')
+    .replaceAll('٧', '7')
+    .replaceAll('٨', '8')
+    .replaceAll('٩', '9')
+    .replaceAll('٠', '0');
