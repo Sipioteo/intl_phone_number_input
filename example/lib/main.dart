@@ -172,39 +172,58 @@ class _MyTextFieldState extends State<MyTextField> {
 
   String _hintText = '';
 
+  int maxDigit = 10;
+  late List<String> _remainsZero;
+  String previousText = '';
+
   @override
   void initState() {
+    String input = "1234567890123456";
+    String format = "00 0000 0000 0000";
+
+    String formattedText = applyFormat(input, format);
+    print(formattedText); // Output: "1234 5678 9012 3456"
+
+
+
+    _remainsZero = List.generate(maxDigit, (index) => '0').toList();
     _controller = TextEditingController();
     _controller.addListener(_listener);
+    String finalStr = _remainsZero.reduce((value, element) {
+      return value + element;
+    });
+    _hintText = finalStr;
+
     super.initState();
   }
 
-  List<String> _remainsZero = List.generate(10, (index) => '0').toList();
-  String previousText = '';
 
   void _listener() {
     String currentText = _controller.text.replaceAll('  ', '');
-
-    if (previousText.length > currentText.length) {
+    if(currentText.length > maxDigit){
+      return;
+    }
+    else if (previousText.length > currentText.length) {
       // Backspace pressed
       _remainsZero
           .replaceRange(currentText.length, currentText.length + 1, ['0']);
     } else if (previousText.length < currentText.length) {
-      print('currentText ${currentText.length}');
-      print('previousText ${previousText.length}');
+      // type a new char
       _remainsZero.replaceRange(
           currentText.length - 1, currentText.length, [''.padLeft(1)]);
     }
-    String finalStr = _remainsZero.reduce((value, element) {
-      return value + element;
-    });
 
-    setState(() {
-      _hintText = finalStr;
-    });
-    // _controller.text= '9999999999';
+     if(currentText.length <= maxDigit){
+      String finalStr = _remainsZero.reduce((value, element) {
+        return value + element;
+      });
 
-    previousText = currentText;
+      setState(() {
+        _hintText = finalStr;
+      });
+      previousText = currentText;
+    }
+
   }
 
   @override
@@ -226,44 +245,47 @@ class _MyTextFieldState extends State<MyTextField> {
         height: 50,
         child: Stack(
           children: [
-            TextFormField(
-              keyboardType: TextInputType.number,
-              textDirection: TextDirection.ltr,
-              enabled: false,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                fontSize: 18,
-                letterSpacing: 1.7,
-              ),
-              onTapOutside: (event) => FocusManager.instance.primaryFocus?.unfocus(),
-              decoration: InputDecoration(
-                hintText: _hintText,
-                hintStyle: TextStyle(
-                  fontSize: 18,
-                  letterSpacing: 2,
-                ),
-                suffixText: ''.padLeft(_controller.text.replaceAll('  ', '').length * 2),
-                border: InputBorder.none,
-                contentPadding: EdgeInsets.zero
-              ),
-            ),
+            // TextFormField(
+            //   keyboardType: TextInputType.number,
+            //   textDirection: TextDirection.ltr,
+            //   enabled: false,
+            //   textAlign: TextAlign.left,
+            //   style: TextStyle(
+            //     fontSize: 18,
+            //     letterSpacing: 1.7,
+            //   ),
+            //   onTapOutside: (event) =>
+            //       FocusManager.instance.primaryFocus?.unfocus(),
+            //   decoration: InputDecoration(
+            //       hintText: _hintText,
+            //       hintStyle: TextStyle(
+            //         fontSize: 18,
+            //         letterSpacing: 2,
+            //       ),
+            //       suffixText: ''.padLeft(
+            //           _controller.text.replaceAll('  ', '').length * 2),
+            //       border: InputBorder.none,
+            //       contentPadding: EdgeInsets.zero),
+            // ),
             TextFormField(
               keyboardType: TextInputType.number,
               textDirection: TextDirection.ltr,
               controller: _controller,
               textAlign: TextAlign.left,
+              maxLengthEnforcement: MaxLengthEnforcement.none,
               inputFormatters: [
-                CardNumberInputFormatter(),
+                DynamicCardNumberInputFormatter('0 00 000 0000 000000'),
               ],
               style: TextStyle(
-                  fontSize: 18,
+                fontSize: 18,
                 letterSpacing: -2,
                 // backgroundColor: Colors.red,
               ),
-              onTapOutside: (event) => FocusManager.instance.primaryFocus?.unfocus(),
+              onTapOutside: (event) =>
+                  FocusManager.instance.primaryFocus?.unfocus(),
               decoration: InputDecoration(
-                  border: InputBorder.none,
-                  contentPadding: EdgeInsets.zero,
+                border: InputBorder.none,
+                contentPadding: EdgeInsets.zero,
               ),
             ),
           ],
@@ -271,57 +293,11 @@ class _MyTextFieldState extends State<MyTextField> {
       ),
     );
   }
+
+
+
 }
 
-class _BlankSpaceFormatter extends TextInputFormatter {
-  @override
-  TextEditingValue formatEditUpdate(TextEditingValue oldValue, TextEditingValue newValue) {
-    String newText = newValue.text.replaceAll(' ', ''); // Remove existing spaces
-    String formattedText = '';
-    int selectionIndex = newValue.selection.start;
-
-    for (int i = 0; i < newText.length; i++) {
-      formattedText += newText[i];
-      if (i != newText.length - 1) {
-        formattedText += ' ';
-        if (i < selectionIndex) {
-          selectionIndex++;
-        }
-      }
-    }
-
-    return TextEditingValue(
-      text: formattedText,
-      selection: TextSelection.collapsed(offset: selectionIndex),
-    );
-  }
-}
-
-
-class DigitPersianFormatter extends TextInputFormatter {
-  @override
-  TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue, TextEditingValue newValue) {
-
-    String persianInput = addSpaceBetweenChars(newValue.text);
-    int selectionIndex = newValue.selection.end;
-    return newValue.copyWith(
-      text: persianInput,
-      selection: TextSelection.collapsed(offset: selectionIndex),
-    );
-  }
-
-  String addSpaceBetweenChars(String input) {
-    String result = '';
-    for (int i = 0; i < input.length; i++) {
-      result += input[i];
-      if (i != input.length - 1) {
-        result += ' ';
-      }
-    }
-    return result;
-  }
-}
 
 class CardNumberInputFormatter extends TextInputFormatter {
   @override
@@ -355,6 +331,60 @@ class CardNumberInputFormatter extends TextInputFormatter {
   }
 }
 
+class DynamicCardNumberInputFormatter extends TextInputFormatter {
+  final String format;
+
+  DynamicCardNumberInputFormatter(this.format);
+
+  @override
+  TextEditingValue formatEditUpdate(TextEditingValue oldValue, TextEditingValue newValue) {
+    var text = newValue.text.replaceAll(RegExp(r'\D'), ''); // Remove non-digits
+
+    if (newValue.selection.baseOffset == 0) {
+      return newValue;
+    }
+    var formattedText = _formatText(text);
+    return TextEditingValue(
+      text: formattedText,
+      selection: TextSelection.collapsed(offset: formattedText.length),
+    );
+  }
+
+
+  String _formatText(String input) {
+    var buffer = StringBuffer();
+    int formatIndex = 0;
+
+    for (int i = 0; i < input.length; i++) {
+      // Skip over spaces in the format string
+      if (i > 0) {
+        buffer.write(' ');
+      }
+
+      // Append the input character
+      while (formatIndex < format.length && format[formatIndex] == ' ') {
+        buffer.write('  ');
+        formatIndex++;
+      }
+
+      if (i >= input.length) {
+        break;
+      }
+
+      buffer.write(input[i]);
+      formatIndex++;
+    }
+
+    return buffer.toString();
+  }
+
+
+
+}
+
+
+
+
 String removeArabicNumbers(String text) => text
     .replaceAll('١', '1')
     .replaceAll('٢', '2')
@@ -366,3 +396,32 @@ String removeArabicNumbers(String text) => text
     .replaceAll('٨', '8')
     .replaceAll('٩', '9')
     .replaceAll('٠', '0');
+
+
+String applyFormat(String input, String format) {
+  String formattedText = '';
+  int count = 0;
+
+  for (int i = 0; i < input.length; i++) {
+    if (count >= format.length) {
+      break; // Exit loop if we reach the end of the format string
+    }
+
+    if (format[count] == '0') {
+      formattedText += input[i];
+    } else {
+      formattedText += format[count]; // Add the format character
+      formattedText += input[i]; // Add the input character
+    }
+
+    count++;
+
+    // Add a space if the next character in the format is a space
+    if (count < format.length && format[count] == ' ') {
+      formattedText += ' ';
+      count++;
+    }
+  }
+
+  return formattedText;
+}
