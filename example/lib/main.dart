@@ -20,14 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Directionality(
-        textDirection: TextDirection.rtl,
-        child: Scaffold(
-          appBar: AppBar(title: Text('Demo')),
-          // body: AbberApp(),
-          body: MyTextField(),
-          // body: PinCodeVerificationScreen(),
-        ),
+      home: Scaffold(
+        appBar: AppBar(title: Text('Demo')),
+        // body: AbberApp(),
+        body: HintFormField(),
+        // body: PinCodeVerificationScreen(),
       ),
     );
   }
@@ -165,141 +162,107 @@ class AbberApp extends StatelessWidget {
   }
 }
 
-class MyTextField extends StatefulWidget {
+class HintFormField extends StatefulWidget {
+  const HintFormField({super.key});
+
   @override
-  _MyTextFieldState createState() => _MyTextFieldState();
+  State<HintFormField> createState() => _HintFormFieldState();
 }
 
-class _MyTextFieldState extends State<MyTextField> {
-  late final TextEditingController _controller2;
-  String _hintText2 = '';
+class _HintFormFieldState extends State<HintFormField> {
+
+  late final TextEditingController _controller;
+  String _hintText = '';
+  String _previousText = '';
 
   @override
   void initState() {
-    _controller2 = TextEditingController();
-    _getFormatHintText(formatHint);
-    AppFormatter.mask = formatHint;
     super.initState();
+    _controller = TextEditingController();
+    _formatterHint();
   }
 
   @override
   void dispose() {
-    _controller2.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
-  String formatHint = '# ### ## #### ##';
-
-  void _getFormatHintText(String input) {
-    String replacedAll = input.replaceAll('#', '0');
+  void _formatterHint() {
+    String hintFormat = '#### # # # # ##';
+    _AppFormatter.mask = hintFormat;
     setState(() {
-      _hintText2 = replacedAll;
+      _hintText = hintFormat.replaceAll('#', '0');
     });
   }
 
-  String previousText2 = '';
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Center(
-        child: InputDecorator(
-          isEmpty: true,
+    return Center(
+      child: InputDecorator(
+        isEmpty: true,
+        textAlign: TextAlign.left,
+        decoration: InputDecoration(
+          hintText: _hintText,
+          hintStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
+            color: Colors.grey,
+            fontFeatures: [FontFeature.tabularFigures()],
+          ),
+          hintTextDirection: TextDirection.ltr,
+          border: InputBorder.none,
+        ),
+        child: TextField(
+          keyboardType: TextInputType.number,
           textAlign: TextAlign.left,
-          decoration: InputDecoration(
-            hintText: _hintText2,
-            hintStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: Colors.grey,
-              fontFeatures: [FontFeature.tabularFigures()],
-            ),
-            hintTextDirection: TextDirection.ltr,
-            border: InputBorder.none,
+          controller: _controller,
+          textDirection: TextDirection.ltr,
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontFeatures: [FontFeature.tabularFigures()],
           ),
-          child: TextField(
-            keyboardType: TextInputType.number,
-            textAlign: TextAlign.left,
-            controller: _controller2,
-            textDirection: TextDirection.ltr,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              fontFeatures: [FontFeature.tabularFigures()],
-            ),
-            inputFormatters: [
-              AppFormatter.maskFormatter,
-            ],
-            onChanged: (value) {
-              final baseOffset = _controller2.selection.baseOffset;
-              if (value.length < previousText2.length) {
-                String result = _hintText2;
-                List<int> spaceIndices = [];
-                int currentIndex = previousText2.indexOf(' ');
-                while (currentIndex != -1) {
-                  spaceIndices.add(currentIndex);
-                  currentIndex = previousText2.indexOf(' ', currentIndex + 1);
-                }
-                // print("Index of space: $spaceIndices");
-                // print("baseOffset: $baseOffset");
-                if(spaceIndices.isEmpty){
-                  result = _hintText2.replaceRange(
-                      baseOffset, baseOffset + 1, '0');
-                  print("Replace first");
-                }
-                else if(spaceIndices.last != baseOffset){
-                  print("Replace");
-                  result = _hintText2.replaceRange(
-                      baseOffset, baseOffset + 1, '0');
-                }
-                else {
-                  print("Skip");
-                  result = _hintText2.replaceRange(
-                            baseOffset + 1, baseOffset + 2, '0');
-
-                }
-                // String result = _hintText2;
-                // check where index of space
-                // for(var char in previousText2.split('')){
-                //   if (char == ' ') {
-                //     print('SKIP OVER SPACE ');
-                //
-                //     result = _hintText2.replaceRange(
-                //         baseOffset + 1, baseOffset + 2, '0');
-                //     break;
-                //   } else {
-                //     print('REPLACE ');
-                //
-                //     result = _hintText2.replaceRange(
-                //         baseOffset, baseOffset + 1, '0');
-                //   }
-                //
-                // }
-                _hintText2 = result;
-              }
-
-              else {
-                String result = _hintText2.replaceRange(
-                    baseOffset - 1, baseOffset, value.split('').last);
-                _hintText2 = result;
-              }
-              previousText2 = value;
-              setState(() {});
-            },
-          ),
+          inputFormatters: [
+            _AppFormatter.maskFormatter,
+          ],
+          onChanged: _onChanged,
         ),
       ),
     );
   }
+
+  void _onChanged(String value) {
+    final baseOffset = _controller.selection.baseOffset;
+    if (value.length < _previousText.length) {
+      String result = _hintText;
+      List<int> spaceIndices = [];
+      int currentIndex = _previousText.indexOf(' ');
+      while (currentIndex != -1) {
+        spaceIndices.add(currentIndex);
+        currentIndex = _previousText.indexOf(' ', currentIndex + 1);
+      }
+      if (spaceIndices.isEmpty) {
+        result = _hintText.replaceRange(baseOffset, baseOffset + 1, '0');
+      } else if (spaceIndices.last != baseOffset) {
+        result = _hintText.replaceRange(baseOffset, baseOffset + 1, '0');
+      } else {
+        result = _hintText.replaceRange(baseOffset + 1, baseOffset + 2, '0');
+      }
+      _hintText = result;
+    } else {
+      String result = _hintText.replaceRange(
+          baseOffset - 1, baseOffset, value.split('').last);
+      _hintText = result;
+    }
+    _previousText = value;
+    setState(() {});
+  }
 }
 
-class AppFormatter {
+
+class _AppFormatter {
   static String mask = '';
-
   static TextInputFormatter maskFormatter = MaskTextInputFormatter(
-      mask: mask,
-      filter: {"#": RegExp(r'[0-9]')},
-      type: MaskAutoCompletionType.lazy);
-
-  static TextInputFormatter maskFormatter2 = Mask.generic(
-    masks: [mask],
-    hashtag: Hashtag.numbers,
+    mask: mask,
+    filter: {"#": RegExp(r'[0-9]')},
+    type: MaskAutoCompletionType.lazy,
   );
 }
