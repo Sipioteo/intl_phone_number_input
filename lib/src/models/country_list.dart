@@ -46,6 +46,7 @@ class Countries {
 
   static List<Map<String, dynamic>> _countryList = [
     {
+      "hint_format": "### ### ###",
       "num_code": "4",
       "digits_without_dial": "",
       "alpha_2_code": "AF",
@@ -78,6 +79,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "248",
       "digits_without_dial": "",
       "alpha_2_code": "AX",
@@ -110,6 +112,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "8",
       "digits_without_dial": "",
       "alpha_2_code": "AL",
@@ -142,6 +145,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "12",
       "digits_without_dial": "",
       "alpha_2_code": "DZ",
@@ -174,6 +178,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "16",
       "digits_without_dial": "",
       "alpha_2_code": "AS",
@@ -206,6 +211,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "20",
       "digits_without_dial": "",
       "alpha_2_code": "AD",
@@ -238,6 +244,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "24",
       "digits_without_dial": "",
       "alpha_2_code": "AO",
@@ -270,6 +277,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "660",
       "digits_without_dial": "",
       "alpha_2_code": "AI",
@@ -302,6 +310,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "10",
       "digits_without_dial": "",
       "alpha_2_code": "AQ",
@@ -334,6 +343,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "28",
       "digits_without_dial": "",
       "alpha_2_code": "AG",
@@ -366,6 +376,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "32",
       "digits_without_dial": "",
       "alpha_2_code": "AR",
@@ -398,6 +409,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "51",
       "digits_without_dial": "",
       "alpha_2_code": "AM",
@@ -430,6 +442,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "533",
       "digits_without_dial": "",
       "alpha_2_code": "AW",
@@ -462,6 +475,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "36",
       "digits_without_dial": "",
       "alpha_2_code": "AU",
@@ -494,6 +508,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "40",
       "digits_without_dial": "",
       "alpha_2_code": "AT",
@@ -526,6 +541,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "31",
       "digits_without_dial": "",
       "alpha_2_code": "AZ",
@@ -558,6 +574,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "44",
       "digits_without_dial": "",
       "alpha_2_code": "BS",
@@ -590,6 +607,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "48",
       "digits_without_dial": "",
       "alpha_2_code": "BH",
@@ -622,6 +640,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "50",
       "digits_without_dial": "",
       "alpha_2_code": "BD",
@@ -654,6 +673,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "52",
       "digits_without_dial": "",
       "alpha_2_code": "BB",
@@ -686,6 +706,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "112",
       "digits_without_dial": "",
       "alpha_2_code": "BY",
@@ -718,6 +739,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "56",
       "digits_without_dial": "",
       "alpha_2_code": "BE",
@@ -750,6 +772,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "84",
       "digits_without_dial": "",
       "alpha_2_code": "BZ",
@@ -782,6 +805,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "204",
       "digits_without_dial": "",
       "alpha_2_code": "BJ",
@@ -814,6 +838,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "60",
       "digits_without_dial": "",
       "alpha_2_code": "BM",
@@ -846,6 +871,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "64",
       "digits_without_dial": "",
       "alpha_2_code": "BT",
@@ -878,6 +904,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "68",
       "digits_without_dial": "",
       "alpha_2_code": "BO",
@@ -910,6 +937,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "70",
       "digits_without_dial": "",
       "alpha_2_code": "BA",
@@ -942,6 +970,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "72",
       "digits_without_dial": "",
       "alpha_2_code": "BW",
@@ -974,6 +1003,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "74",
       "digits_without_dial": "",
       "alpha_2_code": "BV",
@@ -1006,6 +1036,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "76",
       "digits_without_dial": "",
       "alpha_2_code": "BR",
@@ -1038,6 +1069,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "86",
       "digits_without_dial": "",
       "alpha_2_code": "IO",
@@ -1070,6 +1102,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "96",
       "digits_without_dial": "",
       "alpha_2_code": "BN",
@@ -1102,6 +1135,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "100",
       "digits_without_dial": "",
       "alpha_2_code": "BG",
@@ -1134,6 +1168,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "854",
       "digits_without_dial": "",
       "alpha_2_code": "BF",
@@ -1166,6 +1201,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "108",
       "digits_without_dial": "",
       "alpha_2_code": "BI",
@@ -1198,6 +1234,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "132",
       "digits_without_dial": "",
       "alpha_2_code": "CV",
@@ -1230,6 +1267,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "116",
       "digits_without_dial": "",
       "alpha_2_code": "KH",
@@ -1262,6 +1300,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "120",
       "digits_without_dial": "",
       "alpha_2_code": "CM",
@@ -1294,6 +1333,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "124",
       "digits_without_dial": "",
       "alpha_2_code": "CA",
@@ -1326,6 +1366,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "136",
       "digits_without_dial": "",
       "alpha_2_code": "KY",
@@ -1358,6 +1399,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "140",
       "digits_without_dial": "",
       "alpha_2_code": "CF",
@@ -1390,6 +1432,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "148",
       "digits_without_dial": "",
       "alpha_2_code": "TD",
@@ -1422,6 +1465,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "152",
       "digits_without_dial": "",
       "alpha_2_code": "CL",
@@ -1454,6 +1498,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "156",
       "digits_without_dial": "",
       "alpha_2_code": "CN",
@@ -1486,6 +1531,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "162",
       "digits_without_dial": "",
       "alpha_2_code": "CX",
@@ -1518,6 +1564,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "166",
       "digits_without_dial": "",
       "alpha_2_code": "CC",
@@ -1550,6 +1597,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "170",
       "digits_without_dial": "",
       "alpha_2_code": "CO",
@@ -1582,6 +1630,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "174",
       "digits_without_dial": "",
       "alpha_2_code": "KM",
@@ -1614,6 +1663,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "178",
       "digits_without_dial": "",
       "alpha_2_code": "CG",
@@ -1646,6 +1696,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "180",
       "digits_without_dial": "",
       "alpha_2_code": "CD",
@@ -1678,6 +1729,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "184",
       "digits_without_dial": "",
       "alpha_2_code": "CK",
@@ -1710,6 +1762,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "188",
       "digits_without_dial": "",
       "alpha_2_code": "CR",
@@ -1742,6 +1795,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "384",
       "digits_without_dial": "",
       "alpha_2_code": "CI",
@@ -1774,6 +1828,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "191",
       "digits_without_dial": "",
       "alpha_2_code": "HR",
@@ -1806,6 +1861,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "192",
       "digits_without_dial": "",
       "alpha_2_code": "CU",
@@ -1838,6 +1894,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "196",
       "digits_without_dial": "",
       "alpha_2_code": "CY",
@@ -1870,6 +1927,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "203",
       "digits_without_dial": "",
       "alpha_2_code": "CZ",
@@ -1902,6 +1960,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "208",
       "digits_without_dial": "",
       "alpha_2_code": "DK",
@@ -1934,6 +1993,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "262",
       "digits_without_dial": "",
       "alpha_2_code": "DJ",
@@ -1966,6 +2026,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "212",
       "digits_without_dial": "",
       "alpha_2_code": "DM",
@@ -1998,6 +2059,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "214",
       "digits_without_dial": "",
       "alpha_2_code": "DO",
@@ -2030,6 +2092,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "218",
       "digits_without_dial": "",
       "alpha_2_code": "EC",
@@ -2062,6 +2125,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "## #### ####",
       "num_code": "818",
       "digits_without_dial": "10",
       "alpha_2_code": "EG",
@@ -2094,6 +2158,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "222",
       "digits_without_dial": "",
       "alpha_2_code": "SV",
@@ -2126,6 +2191,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "226",
       "digits_without_dial": "",
       "alpha_2_code": "GQ",
@@ -2158,6 +2224,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "232",
       "digits_without_dial": "",
       "alpha_2_code": "ER",
@@ -2190,6 +2257,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "233",
       "digits_without_dial": "",
       "alpha_2_code": "EE",
@@ -2222,6 +2290,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "231",
       "digits_without_dial": "",
       "alpha_2_code": "ET",
@@ -2254,6 +2323,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "238",
       "digits_without_dial": "",
       "alpha_2_code": "FK",
@@ -2286,6 +2356,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "234",
       "digits_without_dial": "",
       "alpha_2_code": "FO",
@@ -2318,6 +2389,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "242",
       "digits_without_dial": "",
       "alpha_2_code": "FJ",
@@ -2350,6 +2422,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "246",
       "digits_without_dial": "",
       "alpha_2_code": "FI",
@@ -2382,6 +2455,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "250",
       "digits_without_dial": "",
       "alpha_2_code": "FR",
@@ -2414,6 +2488,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "254",
       "digits_without_dial": "",
       "alpha_2_code": "GF",
@@ -2446,6 +2521,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "258",
       "digits_without_dial": "",
       "alpha_2_code": "PF",
@@ -2478,6 +2554,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "260",
       "digits_without_dial": "",
       "alpha_2_code": "TF",
@@ -2510,6 +2587,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "266",
       "digits_without_dial": "",
       "alpha_2_code": "GA",
@@ -2542,6 +2620,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "270",
       "digits_without_dial": "",
       "alpha_2_code": "GM",
@@ -2574,6 +2653,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "268",
       "digits_without_dial": "",
       "alpha_2_code": "GE",
@@ -2606,6 +2686,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "276",
       "digits_without_dial": "",
       "alpha_2_code": "DE",
@@ -2638,6 +2719,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "288",
       "digits_without_dial": "",
       "alpha_2_code": "GH",
@@ -2670,6 +2752,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "292",
       "digits_without_dial": "",
       "alpha_2_code": "GI",
@@ -2702,6 +2785,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "300",
       "digits_without_dial": "",
       "alpha_2_code": "GR",
@@ -2734,6 +2818,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "304",
       "digits_without_dial": "",
       "alpha_2_code": "GL",
@@ -2766,6 +2851,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "308",
       "digits_without_dial": "",
       "alpha_2_code": "GD",
@@ -2798,6 +2884,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "312",
       "digits_without_dial": "",
       "alpha_2_code": "GP",
@@ -2830,6 +2917,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "316",
       "digits_without_dial": "",
       "alpha_2_code": "GU",
@@ -2862,6 +2950,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "320",
       "digits_without_dial": "",
       "alpha_2_code": "GT",
@@ -2894,6 +2983,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "831",
       "digits_without_dial": "",
       "alpha_2_code": "GG",
@@ -2926,6 +3016,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "324",
       "digits_without_dial": "",
       "alpha_2_code": "GN",
@@ -2958,6 +3049,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "624",
       "digits_without_dial": "",
       "alpha_2_code": "GW",
@@ -2990,6 +3082,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "328",
       "digits_without_dial": "",
       "alpha_2_code": "GY",
@@ -3022,6 +3115,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "332",
       "digits_without_dial": "",
       "alpha_2_code": "HT",
@@ -3054,6 +3148,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "334",
       "digits_without_dial": "",
       "alpha_2_code": "HM",
@@ -3086,6 +3181,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "336",
       "digits_without_dial": "",
       "alpha_2_code": "VA",
@@ -3118,6 +3214,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "340",
       "digits_without_dial": "",
       "alpha_2_code": "HN",
@@ -3150,6 +3247,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "344",
       "digits_without_dial": "",
       "alpha_2_code": "HK",
@@ -3182,6 +3280,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "348",
       "digits_without_dial": "",
       "alpha_2_code": "HU",
@@ -3214,6 +3313,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "352",
       "digits_without_dial": "",
       "alpha_2_code": "IS",
@@ -3246,6 +3346,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "356",
       "digits_without_dial": "",
       "alpha_2_code": "IN",
@@ -3278,6 +3379,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "360",
       "digits_without_dial": "",
       "alpha_2_code": "ID",
@@ -3310,6 +3412,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "364",
       "digits_without_dial": "",
       "alpha_2_code": "IR",
@@ -3342,6 +3445,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "368",
       "digits_without_dial": "",
       "alpha_2_code": "IQ",
@@ -3374,6 +3478,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "372",
       "digits_without_dial": "",
       "alpha_2_code": "IE",
@@ -3406,6 +3511,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "833",
       "digits_without_dial": "",
       "alpha_2_code": "IM",
@@ -3438,6 +3544,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "376",
       "digits_without_dial": "",
       "alpha_2_code": "IL",
@@ -3470,6 +3577,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "380",
       "digits_without_dial": "",
       "alpha_2_code": "IT",
@@ -3502,6 +3610,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "388",
       "digits_without_dial": "",
       "alpha_2_code": "JM",
@@ -3534,6 +3643,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "392",
       "digits_without_dial": "",
       "alpha_2_code": "JP",
@@ -3566,6 +3676,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "832",
       "digits_without_dial": "",
       "alpha_2_code": "JE",
@@ -3598,6 +3709,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "400",
       "digits_without_dial": "",
       "alpha_2_code": "JO",
@@ -3630,6 +3742,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "398",
       "digits_without_dial": "",
       "alpha_2_code": "KZ",
@@ -3662,6 +3775,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "404",
       "digits_without_dial": "",
       "alpha_2_code": "KE",
@@ -3694,6 +3808,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "296",
       "digits_without_dial": "",
       "alpha_2_code": "KI",
@@ -3726,6 +3841,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "408",
       "digits_without_dial": "",
       "alpha_2_code": "KP",
@@ -3758,6 +3874,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "410",
       "digits_without_dial": "",
       "alpha_2_code": "KR",
@@ -3790,6 +3907,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "414",
       "digits_without_dial": "",
       "alpha_2_code": "KW",
@@ -3822,6 +3940,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "417",
       "digits_without_dial": "",
       "alpha_2_code": "KG",
@@ -3854,6 +3973,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "418",
       "digits_without_dial": "",
       "alpha_2_code": "LA",
@@ -3886,6 +4006,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "428",
       "digits_without_dial": "",
       "alpha_2_code": "LV",
@@ -3918,6 +4039,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "422",
       "digits_without_dial": "",
       "alpha_2_code": "LB",
@@ -3950,6 +4072,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "426",
       "digits_without_dial": "",
       "alpha_2_code": "LS",
@@ -3982,6 +4105,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "430",
       "digits_without_dial": "",
       "alpha_2_code": "LR",
@@ -4014,6 +4138,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "434",
       "digits_without_dial": "",
       "alpha_2_code": "LY",
@@ -4046,6 +4171,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "438",
       "digits_without_dial": "",
       "alpha_2_code": "LI",
@@ -4078,6 +4204,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "440",
       "digits_without_dial": "",
       "alpha_2_code": "LT",
@@ -4110,6 +4237,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "442",
       "digits_without_dial": "",
       "alpha_2_code": "LU",
@@ -4142,6 +4270,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "446",
       "digits_without_dial": "",
       "alpha_2_code": "MO",
@@ -4174,6 +4303,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "807",
       "digits_without_dial": "",
       "alpha_2_code": "MK",
@@ -4206,6 +4336,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "450",
       "digits_without_dial": "",
       "alpha_2_code": "MG",
@@ -4238,6 +4369,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "454",
       "digits_without_dial": "",
       "alpha_2_code": "MW",
@@ -4270,6 +4402,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "458",
       "digits_without_dial": "",
       "alpha_2_code": "MY",
@@ -4302,6 +4435,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "462",
       "digits_without_dial": "",
       "alpha_2_code": "MV",
@@ -4334,6 +4468,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "466",
       "digits_without_dial": "",
       "alpha_2_code": "ML",
@@ -4366,6 +4501,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "470",
       "digits_without_dial": "",
       "alpha_2_code": "MT",
@@ -4398,6 +4534,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "584",
       "digits_without_dial": "",
       "alpha_2_code": "MH",
@@ -4430,6 +4567,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "474",
       "digits_without_dial": "",
       "alpha_2_code": "MQ",
@@ -4462,6 +4600,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "478",
       "digits_without_dial": "",
       "alpha_2_code": "MR",
@@ -4494,6 +4633,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "480",
       "digits_without_dial": "",
       "alpha_2_code": "MU",
@@ -4526,6 +4666,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "175",
       "digits_without_dial": "",
       "alpha_2_code": "YT",
@@ -4558,6 +4699,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "484",
       "digits_without_dial": "",
       "alpha_2_code": "MX",
@@ -4590,6 +4732,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "583",
       "digits_without_dial": "",
       "alpha_2_code": "FM",
@@ -4622,6 +4765,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "498",
       "digits_without_dial": "",
       "alpha_2_code": "MD",
@@ -4654,6 +4798,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "492",
       "digits_without_dial": "",
       "alpha_2_code": "MC",
@@ -4686,6 +4831,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "496",
       "digits_without_dial": "",
       "alpha_2_code": "MN",
@@ -4718,6 +4864,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "499",
       "digits_without_dial": "",
       "alpha_2_code": "ME",
@@ -4750,6 +4897,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "500",
       "digits_without_dial": "",
       "alpha_2_code": "MS",
@@ -4782,6 +4930,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "504",
       "digits_without_dial": "",
       "alpha_2_code": "MA",
@@ -4814,6 +4963,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "508",
       "digits_without_dial": "",
       "alpha_2_code": "MZ",
@@ -4846,6 +4996,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "104",
       "digits_without_dial": "",
       "alpha_2_code": "MM",
@@ -4878,6 +5029,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "516",
       "digits_without_dial": "",
       "alpha_2_code": "NA",
@@ -4910,6 +5062,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "520",
       "digits_without_dial": "",
       "alpha_2_code": "NR",
@@ -4942,6 +5095,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "524",
       "digits_without_dial": "",
       "alpha_2_code": "NP",
@@ -4974,6 +5128,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "528",
       "digits_without_dial": "",
       "alpha_2_code": "NL",
@@ -5006,6 +5161,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "540",
       "digits_without_dial": "",
       "alpha_2_code": "NC",
@@ -5038,6 +5194,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "554",
       "digits_without_dial": "",
       "alpha_2_code": "NZ",
@@ -5070,6 +5227,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "558",
       "digits_without_dial": "",
       "alpha_2_code": "NI",
@@ -5102,6 +5260,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "562",
       "digits_without_dial": "",
       "alpha_2_code": "NE",
@@ -5134,6 +5293,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "566",
       "digits_without_dial": "",
       "alpha_2_code": "NG",
@@ -5166,6 +5326,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "570",
       "digits_without_dial": "",
       "alpha_2_code": "NU",
@@ -5198,6 +5359,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "574",
       "digits_without_dial": "",
       "alpha_2_code": "NF",
@@ -5230,6 +5392,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "580",
       "digits_without_dial": "",
       "alpha_2_code": "MP",
@@ -5262,6 +5425,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "578",
       "digits_without_dial": "",
       "alpha_2_code": "NO",
@@ -5294,6 +5458,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "512",
       "digits_without_dial": "",
       "alpha_2_code": "OM",
@@ -5326,6 +5491,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "586",
       "digits_without_dial": "",
       "alpha_2_code": "PK",
@@ -5358,6 +5524,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "585",
       "digits_without_dial": "",
       "alpha_2_code": "PW",
@@ -5390,6 +5557,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "275",
       "digits_without_dial": "",
       "alpha_2_code": "PS",
@@ -5422,6 +5590,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "591",
       "digits_without_dial": "",
       "alpha_2_code": "PA",
@@ -5454,6 +5623,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "598",
       "digits_without_dial": "",
       "alpha_2_code": "PG",
@@ -5486,6 +5656,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "600",
       "digits_without_dial": "",
       "alpha_2_code": "PY",
@@ -5518,6 +5689,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "604",
       "digits_without_dial": "",
       "alpha_2_code": "PE",
@@ -5550,6 +5722,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "608",
       "digits_without_dial": "",
       "alpha_2_code": "PH",
@@ -5582,6 +5755,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "612",
       "digits_without_dial": "",
       "alpha_2_code": "PN",
@@ -5614,6 +5788,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "616",
       "digits_without_dial": "",
       "alpha_2_code": "PL",
@@ -5646,6 +5821,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "620",
       "digits_without_dial": "",
       "alpha_2_code": "PT",
@@ -5678,6 +5854,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "630",
       "digits_without_dial": "",
       "alpha_2_code": "PR",
@@ -5710,6 +5887,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "634",
       "digits_without_dial": "",
       "alpha_2_code": "QA",
@@ -5742,6 +5920,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "638",
       "digits_without_dial": "",
       "alpha_2_code": "RE",
@@ -5774,6 +5953,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "642",
       "digits_without_dial": "",
       "alpha_2_code": "RO",
@@ -5806,6 +5986,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "643",
       "digits_without_dial": "",
       "alpha_2_code": "RU",
@@ -5838,6 +6019,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "646",
       "digits_without_dial": "",
       "alpha_2_code": "RW",
@@ -5870,6 +6052,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "652",
       "digits_without_dial": "",
       "alpha_2_code": "BL",
@@ -5902,6 +6085,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "654",
       "digits_without_dial": "",
       "alpha_2_code": "SH",
@@ -5934,6 +6118,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "659",
       "digits_without_dial": "",
       "alpha_2_code": "KN",
@@ -5966,6 +6151,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "662",
       "digits_without_dial": "",
       "alpha_2_code": "LC",
@@ -5998,6 +6184,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "663",
       "digits_without_dial": "",
       "alpha_2_code": "MF",
@@ -6030,6 +6217,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "666",
       "digits_without_dial": "",
       "alpha_2_code": "PM",
@@ -6062,6 +6250,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "670",
       "digits_without_dial": "",
       "alpha_2_code": "VC",
@@ -6094,6 +6283,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "882",
       "digits_without_dial": "",
       "alpha_2_code": "WS",
@@ -6126,6 +6316,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "674",
       "digits_without_dial": "",
       "alpha_2_code": "SM",
@@ -6158,6 +6349,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "678",
       "digits_without_dial": "",
       "alpha_2_code": "ST",
@@ -6190,6 +6382,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "## ### ####",
       "num_code": "682",
       "digits_without_dial": "",
       "alpha_2_code": "SA",
@@ -6222,6 +6415,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "686",
       "digits_without_dial": "",
       "alpha_2_code": "SN",
@@ -6254,6 +6448,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "688",
       "digits_without_dial": "",
       "alpha_2_code": "RS",
@@ -6286,6 +6481,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "690",
       "digits_without_dial": "",
       "alpha_2_code": "SC",
@@ -6318,6 +6514,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "694",
       "digits_without_dial": "",
       "alpha_2_code": "SL",
@@ -6350,6 +6547,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "702",
       "digits_without_dial": "",
       "alpha_2_code": "SG",
@@ -6382,6 +6580,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "703",
       "digits_without_dial": "",
       "alpha_2_code": "SK",
@@ -6414,6 +6613,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "705",
       "digits_without_dial": "",
       "alpha_2_code": "SI",
@@ -6446,6 +6646,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "90",
       "digits_without_dial": "",
       "alpha_2_code": "SB",
@@ -6478,6 +6679,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "706",
       "digits_without_dial": "",
       "alpha_2_code": "SO",
@@ -6510,6 +6712,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "710",
       "digits_without_dial": "",
       "alpha_2_code": "ZA",
@@ -6542,6 +6745,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "239",
       "digits_without_dial": "",
       "alpha_2_code": "GS",
@@ -6574,6 +6778,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "728",
       "digits_without_dial": "",
       "alpha_2_code": "SS",
@@ -6606,6 +6811,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "724",
       "digits_without_dial": "",
       "alpha_2_code": "ES",
@@ -6638,6 +6844,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "144",
       "digits_without_dial": "",
       "alpha_2_code": "LK",
@@ -6670,6 +6877,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "729",
       "digits_without_dial": "",
       "alpha_2_code": "SD",
@@ -6702,6 +6910,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "740",
       "digits_without_dial": "",
       "alpha_2_code": "SR",
@@ -6734,6 +6943,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "744",
       "digits_without_dial": "",
       "alpha_2_code": "SJ",
@@ -6766,6 +6976,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "748",
       "digits_without_dial": "",
       "alpha_2_code": "SZ",
@@ -6798,6 +7009,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "752",
       "digits_without_dial": "",
       "alpha_2_code": "SE",
@@ -6830,6 +7042,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "756",
       "digits_without_dial": "",
       "alpha_2_code": "CH",
@@ -6862,6 +7075,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "760",
       "digits_without_dial": "",
       "alpha_2_code": "SY",
@@ -6894,6 +7108,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "158",
       "digits_without_dial": "",
       "alpha_2_code": "TW",
@@ -6926,6 +7141,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "762",
       "digits_without_dial": "",
       "alpha_2_code": "TJ",
@@ -6958,6 +7174,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "834",
       "digits_without_dial": "",
       "alpha_2_code": "TZ",
@@ -6990,6 +7207,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "764",
       "digits_without_dial": "",
       "alpha_2_code": "TH",
@@ -7022,6 +7240,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "626",
       "digits_without_dial": "",
       "alpha_2_code": "TL",
@@ -7054,6 +7273,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "768",
       "digits_without_dial": "",
       "alpha_2_code": "TG",
@@ -7086,6 +7306,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "772",
       "digits_without_dial": "",
       "alpha_2_code": "TK",
@@ -7118,6 +7339,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "776",
       "digits_without_dial": "",
       "alpha_2_code": "TO",
@@ -7150,6 +7372,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "780",
       "digits_without_dial": "",
       "alpha_2_code": "TT",
@@ -7182,6 +7405,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "788",
       "digits_without_dial": "",
       "alpha_2_code": "TN",
@@ -7214,6 +7438,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "792",
       "digits_without_dial": "",
       "alpha_2_code": "TR",
@@ -7246,6 +7471,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "795",
       "digits_without_dial": "",
       "alpha_2_code": "TM",
@@ -7278,6 +7504,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "796",
       "digits_without_dial": "",
       "alpha_2_code": "TC",
@@ -7310,6 +7537,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "798",
       "digits_without_dial": "",
       "alpha_2_code": "TV",
@@ -7342,6 +7570,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "800",
       "digits_without_dial": "",
       "alpha_2_code": "UG",
@@ -7374,6 +7603,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "804",
       "digits_without_dial": "",
       "alpha_2_code": "UA",
@@ -7406,6 +7636,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "784",
       "digits_without_dial": "",
       "alpha_2_code": "AE",
@@ -7438,6 +7669,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "826",
       "digits_without_dial": "",
       "alpha_2_code": "GB",
@@ -7470,6 +7702,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "840",
       "digits_without_dial": "",
       "alpha_2_code": "US",
@@ -7502,6 +7735,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "858",
       "digits_without_dial": "",
       "alpha_2_code": "UY",
@@ -7534,6 +7768,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "860",
       "digits_without_dial": "",
       "alpha_2_code": "UZ",
@@ -7566,6 +7801,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "548",
       "digits_without_dial": "",
       "alpha_2_code": "VU",
@@ -7598,6 +7834,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "862",
       "digits_without_dial": "",
       "alpha_2_code": "VE",
@@ -7630,6 +7867,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "704",
       "digits_without_dial": "",
       "alpha_2_code": "VN",
@@ -7662,6 +7900,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "92",
       "digits_without_dial": "",
       "alpha_2_code": "VG",
@@ -7694,6 +7933,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "850",
       "digits_without_dial": "",
       "alpha_2_code": "VI",
@@ -7726,6 +7966,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "876",
       "digits_without_dial": "",
       "alpha_2_code": "WF",
@@ -7758,6 +7999,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "887",
       "digits_without_dial": "",
       "alpha_2_code": "YE",
@@ -7790,6 +8032,7 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "894",
       "digits_without_dial": "",
       "alpha_2_code": "ZM",
@@ -7822,8 +8065,8 @@ class Countries {
       }
     },
     {
+      "hint_format": "",
       "num_code": "716",
-      "digits_without_dial": "",
       "alpha_2_code": "ZW",
       "alpha_3_code": "ZWE",
       "en_short_name": "Zimbabwe",

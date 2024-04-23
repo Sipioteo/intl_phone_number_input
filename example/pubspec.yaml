@@ -34,7 +34,11 @@ dev_dependencies:
   libphonenumber: ^2.0.0
   pin_code_fields: ^8.0.1
   mask: ^1.0.5
-  mask_text_input_formatter: ^2.9.0
+  hint_form_field: ^0.0.3
+#  mask_text_input_formatter: ^2.9.0
+#  mask_text_input_formatter:
+#    git:
+#      url: https://github.com/HamadaAllipy/mask_text_input_formatter.git
   intl_phone_number_input:
     path: ../
 

@@ -45,6 +45,7 @@ class SelectorButton extends StatelessWidget {
           selected = await showCountrySelectorBottomSheet(
               context, countries);
           if (selected != null) {
+            print('selected ${selected.name}');
             onCountryChanged(selected);
           }
         },

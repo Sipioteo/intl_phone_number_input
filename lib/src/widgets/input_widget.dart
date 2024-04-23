@@ -1,9 +1,8 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import 'package:hint_form_field/hint_form_field.dart';
 import 'package:intl_phone_number_input/src/models/country_list.dart';
 import 'package:intl_phone_number_input/src/models/country_model.dart';
 import 'package:intl_phone_number_input/src/providers/country_provider.dart';
@@ -400,25 +399,11 @@ class _InputWidgetView
     final dialCode = state.country?.dialCode ?? '';
     dialCodeController.text = dialCode;
     _controller.text = '';
-    print('ss ${state.country?.digit}');
+    state.setState(() { });
+    print('ss ${state.country?.hintFormat}');
 
     return Column(
       children: [
-        Center(
-          child: Padding(
-            padding: EdgeInsets.all(20.0),
-            child: TextFormField(
-              enableInteractiveSelection: true,
-              decoration: InputDecoration(
-                floatingLabelBehavior: FloatingLabelBehavior.always,
-                alignLabelWithHint: true,
-                hintText: 'sfds',
-                labelText: 'fdsfsdf',
-
-              ),
-            ),
-          ),
-        ),
         SelectorButton(
           country: state.country,
           countries: state.countries,
@@ -441,6 +426,8 @@ class _InputWidgetView
             ),
           ),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
             children: [
               Expanded(
                 flex: 2,
@@ -467,7 +454,6 @@ class _InputWidgetView
               ),
               Container(
                 width: 1,
-                margin: EdgeInsets.symmetric(horizontal: 10),
                 height: 40,
                 color: ColorsManager.boarder,
               ),
@@ -475,23 +461,10 @@ class _InputWidgetView
                 flex: 9,
                 child: Container(
                   height: 55,
-                  child: TextFormField(
-                    inputFormatters: [],
-
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      hintStyle: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                      ),
-
-                      // hintText: '000 000 0000',
-                      hintFadeDuration: Duration(milliseconds: 1000),
-                      enabledBorder:InputBorder.none,
-                      focusedBorder:InputBorder.none,
-                    ),
+                  child: HintFormField(
+                    hintFormat: '##',
+                    border: InputBorder.none,
                   ),
-                  // color: Colors.green,
                 ),
               ),
             ],
