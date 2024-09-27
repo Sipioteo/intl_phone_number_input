@@ -2,9 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hint_form_field/hint_form_field.dart';
 import 'package:intl_phone_number_input/src/models/country_list.dart';
 import 'package:intl_phone_number_input/src/models/country_model.dart';
 import 'package:intl_phone_number_input/src/providers/country_provider.dart';
+import 'package:intl_phone_number_input/src/utils/constants.dart';
 import 'package:intl_phone_number_input/src/utils/formatter/as_you_type_formatter.dart';
 import 'package:intl_phone_number_input/src/utils/phone_number.dart';
 import 'package:intl_phone_number_input/src/utils/phone_number/phone_number_util.dart';
@@ -382,14 +384,94 @@ class _InputWidgetView
     extends WidgetView<InternationalPhoneNumberInput, _InputWidgetState> {
   final _InputWidgetState state;
 
+  final TextEditingController dialCodeController = TextEditingController();
+
   _InputWidgetView({Key? key, required this.state})
       : super(key: key, state: state);
+
+  TextEditingController _controller = TextEditingController();
+  bool showHint = true;
+
 
   @override
   Widget build(BuildContext context) {
     final countryCode = state.country?.alpha2Code ?? '';
     final dialCode = state.country?.dialCode ?? '';
+    dialCodeController.text = dialCode;
+    _controller.text = '';
+    state.setState(() { });
+    print('ss ${state.country?.hintFormat}');
 
+    return Column(
+      children: [
+        SelectorButton(
+          country: state.country,
+          countries: state.countries,
+          onCountryChanged: state.onCountryChanged,
+          selectorConfig: widget.selectorConfig,
+          selectorTextStyle: widget.selectorTextStyle,
+          searchBoxDecoration: widget.searchBoxDecoration,
+          locale: state.locale,
+          isEnabled: widget.isEnabled,
+          autoFocusSearchField: widget.autoFocusSearch,
+          isScrollControlled: widget.countrySelectorScrollControlled,
+        ),
+        Container(
+          height: 55,
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: ColorsManager.boarder,
+              ),
+            ),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
+            children: [
+              Expanded(
+                flex: 2,
+                child: Container(
+                  height: 55,
+                  child: TextFormField(
+                    controller: dialCodeController,
+                    textAlign: TextAlign.center,
+                    inputFormatters: [
+                      FormatterManager.plusSign,
+                    ],
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w400,
+                      ),
+                      enabledBorder:InputBorder.none,
+                      focusedBorder:InputBorder.none,
+                    ),
+                  ),
+                  // color: Colors.red,
+                ),
+              ),
+              Container(
+                width: 1,
+                height: 40,
+                color: ColorsManager.boarder,
+              ),
+              Expanded(
+                flex: 9,
+                child: Container(
+                  height: 55,
+                  child: HintFormField(
+                    hintFormat: '##',
+                    border: InputBorder.none,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,

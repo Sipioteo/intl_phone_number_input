@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/src/models/country_model.dart';
+import 'package:intl_phone_number_input/src/utils/constants.dart';
 import 'package:intl_phone_number_input/src/utils/selector_config.dart';
 import 'package:intl_phone_number_input/src/utils/test/test_helper.dart';
 import 'package:intl_phone_number_input/src/widgets/countries_search_list_widget.dart';
@@ -36,6 +37,49 @@ class SelectorButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    if(true){
+      return InkWell(
+        onTap: ()async{
+          Country? selected;
+          selected = await showCountrySelectorBottomSheet(
+              context, countries);
+          if (selected != null) {
+            print('selected ${selected.name}');
+            onCountryChanged(selected);
+          }
+        },
+        child: Container(
+          height: 55,
+          decoration: BoxDecoration(
+            border: Border(
+              top: BorderSide(
+                color: ColorsManager.boarder,
+              ),
+              bottom: BorderSide(
+                color: ColorsManager.boarder,
+              ),
+            ),
+          ),
+          child: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Item(
+                  country: country,
+                  showFlag: selectorConfig.showFlags,
+                  useEmoji: selectorConfig.useEmoji,
+                  leadingPadding: selectorConfig.leadingPadding,
+                  trailingSpace: selectorConfig.trailingSpace,
+                  textStyle: selectorTextStyle,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     return selectorConfig.selectorType == PhoneInputSelectorType.DROPDOWN
         ? countries.isNotEmpty && countries.length > 1
             ? DropdownButtonHideUnderline(
@@ -149,6 +193,7 @@ class SelectorButton extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       isScrollControlled: isScrollControlled,
       backgroundColor: Colors.transparent,
+      useSafeArea: true,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(12), topRight: Radius.circular(12))),
@@ -160,32 +205,27 @@ class SelectorButton extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                     bottom: MediaQuery.of(context).viewInsets.bottom),
-            child: DraggableScrollableSheet(
-              builder: (BuildContext context, ScrollController controller) {
-                return Directionality(
-                  textDirection: Directionality.of(inheritedContext),
-                  child: Container(
-                    decoration: ShapeDecoration(
-                      color: Theme.of(context).canvasColor,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(12),
-                          topRight: Radius.circular(12),
-                        ),
-                      ),
-                    ),
-                    child: CountrySearchListWidget(
-                      countries,
-                      locale,
-                      searchBoxDecoration: searchBoxDecoration,
-                      scrollController: controller,
-                      showFlags: selectorConfig.showFlags,
-                      useEmoji: selectorConfig.useEmoji,
-                      autoFocus: autoFocusSearchField,
+            child: Directionality(
+              textDirection: Directionality.of(inheritedContext),
+              child: Container(
+                decoration: ShapeDecoration(
+                  color: Theme.of(context).canvasColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12),
                     ),
                   ),
-                );
-              },
+                ),
+                child: CountrySearchListWidget(
+                  countries,
+                  locale,
+                  searchBoxDecoration: searchBoxDecoration,
+                  showFlags: selectorConfig.showFlags,
+                  useEmoji: selectorConfig.useEmoji,
+                  autoFocus: autoFocusSearchField,
+                ),
+              ),
             ),
           ),
         ]);

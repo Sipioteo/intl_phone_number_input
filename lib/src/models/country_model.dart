@@ -21,12 +21,17 @@ class Country {
   /// The nameTranslation for translation
   final Map<String, String>? nameTranslations;
 
+
+  /// The nameTranslation for translation
+  final String hintFormat;
+
   Country({
     required this.name,
     required this.alpha2Code,
     required this.alpha3Code,
     required this.dialCode,
     required this.flagUri,
+    required this.hintFormat,
     this.nameTranslations,
   });
 
@@ -34,6 +39,7 @@ class Country {
   factory Country.fromJson(Map<String, dynamic> data) {
     return Country(
       name: data['en_short_name'],
+      hintFormat: data['hint_format'],
       alpha2Code: data['alpha_2_code'],
       alpha3Code: data['alpha_3_code'],
       dialCode: data['dial_code'],
@@ -49,6 +55,7 @@ class Country {
     return other is Country &&
         other.alpha2Code == this.alpha2Code &&
         other.alpha3Code == this.alpha3Code &&
+        other.hintFormat == this.hintFormat &&
         other.dialCode == this.dialCode;
   }
 
@@ -58,6 +65,7 @@ class Country {
   @override
   String toString() => '[Country] { '
       'name: $name, '
+      'hint_format: $hintFormat, '
       'alpha2: $alpha2Code, '
       'alpha3: $alpha3Code, '
       'dialCode: $dialCode '
